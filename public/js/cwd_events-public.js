@@ -97,21 +97,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var localist_viewer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! localist-viewer */ "./node_modules/localist-viewer/build/index.js");
 /* harmony import */ var localist_viewer__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(localist_viewer__WEBPACK_IMPORTED_MODULE_0__);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
- // const data = require('./config.json');
+var data = __webpack_require__(/*! ./config.json */ "./js/config.json");
 
 __webpack_require__(/*! babel-polyfill */ "./node_modules/babel-polyfill/lib/index.js");
 /** *********************** START LOCALIST *********************************** /
@@ -121,17 +109,28 @@ __webpack_require__(/*! babel-polyfill */ "./node_modules/babel-polyfill/lib/ind
  *  self invoking anonymous function, using drupal behaviours API.
  *
  **************************************************************************** */
-// LocalistView(data);
-// another example of how to config
 
 
-var eventListings = _toConsumableArray(document.getElementsByClassName('events-listing'));
+localist_viewer__WEBPACK_IMPORTED_MODULE_0___default()(data);
+console.log(data); // // another example of how to config
+// const eventListings = [
+//     ...document.getElementsByClassName('events-listing')
+// ];
+// eventListings.forEach(elem => {
+//     const data = { ...elem.dataset };
+//     LocalistView(data);
+// });
 
-eventListings.forEach(function (elem) {
-  var data = _objectSpread({}, elem.dataset);
+/***/ }),
 
-  localist_viewer__WEBPACK_IMPORTED_MODULE_0___default()(data);
-});
+/***/ "./js/config.json":
+/*!************************!*\
+  !*** ./js/config.json ***!
+  \************************/
+/*! exports provided: target, depts, entries, daysahead, format, group, keyword, heading, filterby, calendarurl, apikey, hideaddcal, hidedescription, truncatedescription, hideimages, hidepagination, wrapperclass, listclass, itemclass, readmore, url, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"target\":\"root\",\"depts\":\"\",\"entries\":\"3\",\"daysahead\":\"-3\",\"format\":\"modern_compact\",\"group\":\"\",\"keyword\":\"\",\"heading\":\"Localist-Viewer\",\"filterby\":\"dept\",\"calendarurl\":\"//events.cornell.edu/api/2.1/events\",\"apikey\":\"\",\"hideaddcal\":\"\",\"hidedescription\":\"\",\"truncatedescription\":\"150\",\"hideimages\":\"\",\"hidepagination\":\"'\",\"wrapperclass\":\"cwd-card-grid three-card\",\"listclass\":\"cards\",\"itemclass\":\"card\",\"readmore\":\"Read More »\",\"url\":\"https://philwilliammee.github.io/react-localist-viewer/\"}");
 
 /***/ }),
 

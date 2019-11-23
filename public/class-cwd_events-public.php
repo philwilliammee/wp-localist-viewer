@@ -96,7 +96,13 @@ class Cwd_events_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/cwd_events-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script(
+			$this->plugin_name,
+			plugin_dir_url( __FILE__ ) . 'js/cwd_events-public.js',
+			array( 'jquery' ),
+			$this->version,
+			true
+		);
 
 	}
 
