@@ -12,13 +12,11 @@ require('babel-polyfill');
  **************************************************************************** */
 LocalistView(data);
 
-console.log(data);
-
-// // another example of how to config
-// const eventListings = [
-//     ...document.getElementsByClassName('events-listing')
-// ];
-// eventListings.forEach(elem => {
-//     const data = { ...elem.dataset };
-//     LocalistView(data);
-// });
+// another example of how to config
+const eventListings = [
+    ...document.getElementsByClassName('events-listing')
+];
+eventListings.forEach(elem => {
+    const dataset = { ...elem.dataset };
+    dataset ? LocalistView(dataset) : LocalistView(data);
+});

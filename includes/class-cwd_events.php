@@ -90,6 +90,7 @@ class Cwd_events {
 	 * - Cwd_events_i18n. Defines internationalization functionality.
 	 * - Cwd_events_Admin. Defines all hooks for the admin area.
 	 * - Cwd_events_Public. Defines all hooks for the public side of the site.
+	 * - Cwd_events_Widget. Defines the widget.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -121,6 +122,11 @@ class Cwd_events {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-cwd_events-public.php';
+
+		/**
+		 * Custom events widgets.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'widgets/cwd_events-widget.php';
 
 		$this->loader = new Cwd_events_Loader();
 
@@ -156,6 +162,7 @@ class Cwd_events {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'widgets_init', $plugin_admin, 'register_widgets' );
 
 	}
 

@@ -100,4 +100,15 @@ class Cwd_events_Admin {
 
 	}
 
+	/**
+	 * Create our custom events widget.
+	 *   Cwd_Events_Custom_Widget required by cwd_events-widget
+	 *
+	 * @since    1.0.0
+	 */
+	public function register_widgets() {
+
+		register_widget( 'Cwd_Events_Widget' );
+
+	}
 }
