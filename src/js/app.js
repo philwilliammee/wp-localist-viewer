@@ -1,6 +1,6 @@
 import LocalistView from 'localist-viewer';
 
-const data = require('./config.json');
+// const data = require('./config.json');
 require('babel-polyfill');
 
 /** *********************** START LOCALIST *********************************** /
@@ -10,13 +10,13 @@ require('babel-polyfill');
  *  self invoking anonymous function, using drupal behaviours API.
  *
  **************************************************************************** */
-LocalistView(data);
+// LocalistView(data);
 
 // another example of how to config
 const eventListings = [
-    ...document.getElementsByClassName('events-listing')
+	...document.getElementsByClassName('events-listing')
 ];
 eventListings.forEach(elem => {
-    const dataset = { ...elem.dataset };
-    dataset ? LocalistView(dataset) : LocalistView(data);
+	const dataset = { ...elem.dataset };
+	LocalistView(dataset)
 });

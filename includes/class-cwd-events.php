@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The file that defines the core plugin class
  *
@@ -92,7 +91,7 @@ class Cwd_Events {
 	 * Include the following files that make up the plugin:
 	 *
 	 * - Cwd_Events_Loader. Orchestrates the hooks of the plugin.
-	 * - Cwd_Events_i18n. Defines internationalization functionality.
+	 * - Cwd_Events_I18n. Defines internationalization functionality.
 	 * - Cwd_Events_Admin. Defines all hooks for the admin area.
 	 * - Cwd_Events_Public. Defines all hooks for the public side of the site.
 	 * - Cwd_Events_Widget. Defines the widget.
@@ -109,24 +108,24 @@ class Cwd_Events {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-cwd_events-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-cwd-events-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-cwd_events-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-cwd-events-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-cwd_events-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-cwd-events-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-cwd_events-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-cwd-events-public.php';
 
 		/**
 		 * Custom events widgets.
@@ -140,7 +139,7 @@ class Cwd_Events {
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Cwd_Events_i18n class in order to set the domain and to register the hook
+	 * Uses the Cwd_Events_I18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -148,7 +147,7 @@ class Cwd_Events {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Cwd_Events_i18n();
+		$plugin_i18n = new Cwd_Events_I18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 

@@ -21,7 +21,7 @@
  * Author URI:        philwilliammee.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       cwd_events
+ * Text Domain:       cwd-events
  * Domain Path:       /languages
  */
 
@@ -42,7 +42,7 @@ define( 'CWD_EVENTS_VERSION', '1.0.0' );
  * This action is documented in includes/class-cwd_events-activator.php
  */
 function activate_cwd_events() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-cwd_events-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-cwd-events-activator.php';
 	Cwd_Events_Activator::activate();
 }
 
@@ -51,7 +51,7 @@ function activate_cwd_events() {
  * This action is documented in includes/class-cwd_events-deactivator.php
  */
 function deactivate_cwd_events() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-cwd_events-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-cwd-events-deactivator.php';
 	Cwd_Events_Deactivator::deactivate();
 }
 
@@ -62,7 +62,7 @@ register_deactivation_hook( __FILE__, 'deactivate_cwd_events' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-cwd_events.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-cwd-events.php';
 
 /**
  * Begins execution of the plugin.

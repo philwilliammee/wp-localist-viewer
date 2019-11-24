@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Define the internationalization functionality
  *
@@ -24,7 +23,7 @@
  * @subpackage Cwd_Events/includes
  * @author     Philwilliammee <philwilliammee@gmail.com>
  */
-class Cwd_Events_i18n {
+class Cwd_Events_I18n {
 
 
 	/**

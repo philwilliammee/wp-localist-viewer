@@ -19,5 +19,5 @@ mix.setPublicPath('../public')
         }
     })
     // This will process our entry point (app.js)
-    .js('js/app.js', './js/cwd_events-public.js')
-    .sass('styles/app.scss', './css/cwd_events-public.css')
+    .js('js/app.js', './js/cwd-events-public.js')
+    .sass('styles/app.scss', './css/cwd-events-public.css')
