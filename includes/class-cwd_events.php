@@ -6,11 +6,15 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
+ * PHP version 7^.0
+ *
+ * @category   Events
+ * @package    Cwd_Events
+ * @subpackage Cwd_Events/includes
+ * @author     philwilliammee <psw58@cornell.edu>
+ * @license    gpl3.0 https://www.gnu.org/licenses/gpl-3.0.en.html
  * @link       philwilliammee.com
  * @since      1.0.0
- *
- * @package    Cwd_events
- * @subpackage Cwd_events/includes
  */
 
 /**
@@ -22,12 +26,13 @@
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
+ * @package    Cwd_Events
  * @since      1.0.0
- * @package    Cwd_events
- * @subpackage Cwd_events/includes
+ *
+ * @subpackage Cwd_Events/includes
  * @author     Philwilliammee <philwilliammee@gmail.com>
  */
-class Cwd_events {
+class Cwd_Events {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +40,7 @@ class Cwd_events {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Cwd_events_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Cwd_Events_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -86,11 +91,11 @@ class Cwd_events {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Cwd_events_Loader. Orchestrates the hooks of the plugin.
-	 * - Cwd_events_i18n. Defines internationalization functionality.
-	 * - Cwd_events_Admin. Defines all hooks for the admin area.
-	 * - Cwd_events_Public. Defines all hooks for the public side of the site.
-	 * - Cwd_events_Widget. Defines the widget.
+	 * - Cwd_Events_Loader. Orchestrates the hooks of the plugin.
+	 * - Cwd_Events_i18n. Defines internationalization functionality.
+	 * - Cwd_Events_Admin. Defines all hooks for the admin area.
+	 * - Cwd_Events_Public. Defines all hooks for the public side of the site.
+	 * - Cwd_Events_Widget. Defines the widget.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -128,14 +133,14 @@ class Cwd_events {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'widgets/cwd_events-widget.php';
 
-		$this->loader = new Cwd_events_Loader();
+		$this->loader = new Cwd_Events_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Cwd_events_i18n class in order to set the domain and to register the hook
+	 * Uses the Cwd_Events_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -143,7 +148,7 @@ class Cwd_events {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Cwd_events_i18n();
+		$plugin_i18n = new Cwd_Events_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -158,7 +163,7 @@ class Cwd_events {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Cwd_events_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Cwd_Events_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -175,7 +180,7 @@ class Cwd_events {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Cwd_events_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Cwd_Events_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -206,7 +211,7 @@ class Cwd_events {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Cwd_events_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Cwd_Events_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

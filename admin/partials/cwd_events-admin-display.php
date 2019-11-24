@@ -8,8 +8,8 @@
  * @link       philwilliammee.com
  * @since      1.0.0
  *
- * @package    Cwd_events
- * @subpackage Cwd_events/admin/partials
+ * @package    Cwd_Events
+ * @subpackage Cwd_Events/admin/partials
  */
 ?>
 

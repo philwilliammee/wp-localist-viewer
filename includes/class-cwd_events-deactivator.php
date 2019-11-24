@@ -6,8 +6,8 @@
  * @link       philwilliammee.com
  * @since      1.0.0
  *
- * @package    Cwd_events
- * @subpackage Cwd_events/includes
+ * @package    Cwd_Events
+ * @subpackage Cwd_Events/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Cwd_events
- * @subpackage Cwd_events/includes
+ * @package    Cwd_Events
+ * @subpackage Cwd_Events/includes
  * @author     Philwilliammee <philwilliammee@gmail.com>
  */
-class Cwd_events_Deactivator {
+class Cwd_Events_Deactivator {
 
 	/**
 	 * Short Description. (use period)

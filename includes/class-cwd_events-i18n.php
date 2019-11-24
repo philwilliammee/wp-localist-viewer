@@ -9,8 +9,8 @@
  * @link       philwilliammee.com
  * @since      1.0.0
  *
- * @package    Cwd_events
- * @subpackage Cwd_events/includes
+ * @package    Cwd_Events
+ * @subpackage Cwd_Events/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Cwd_events
- * @subpackage Cwd_events/includes
+ * @package    Cwd_Events
+ * @subpackage Cwd_Events/includes
  * @author     Philwilliammee <philwilliammee@gmail.com>
  */
-class Cwd_events_i18n {
+class Cwd_Events_i18n {
 
 
 	/**

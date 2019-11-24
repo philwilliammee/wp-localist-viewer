@@ -4,7 +4,7 @@
 class Cwd_Events_Widget extends WP_Widget {
 
 	// Main constructor
-	public function __construct() {
+    public function __construct() {
         parent::__construct(
             'cwd_events_widget',
             __( 'Events Widget', 'text_domain' ),

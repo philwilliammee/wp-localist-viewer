@@ -22,7 +22,7 @@
  * @link       philwilliammee.com
  * @since      1.0.0
  *
- * @package    Cwd_events
+ * @package    Cwd_Events
  */
 
 // If uninstall not called from WordPress, then exit.

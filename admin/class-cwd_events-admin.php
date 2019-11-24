@@ -6,8 +6,8 @@
  * @link       philwilliammee.com
  * @since      1.0.0
  *
- * @package    Cwd_events
- * @subpackage Cwd_events/admin
+ * @package    Cwd_Events
+ * @subpackage Cwd_Events/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Cwd_events
- * @subpackage Cwd_events/admin
+ * @package    Cwd_Events
+ * @subpackage Cwd_Events/admin
  * @author     Philwilliammee <philwilliammee@gmail.com>
  */
-class Cwd_events_Admin {
+class Cwd_Events_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -65,10 +65,10 @@ class Cwd_events_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Cwd_events_Loader as all of the hooks are defined
+		 * defined in Cwd_Events_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Cwd_events_Loader will then create the relationship
+		 * The Cwd_Events_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -88,10 +88,10 @@ class Cwd_events_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Cwd_events_Loader as all of the hooks are defined
+		 * defined in Cwd_Events_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Cwd_events_Loader will then create the relationship
+		 * The Cwd_Events_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */

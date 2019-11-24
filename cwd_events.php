@@ -10,7 +10,7 @@
  *
  * @link              philwilliammee.com
  * @since             1.0.0
- * @package           Cwd_events
+ * @package           Cwd_Events
  *
  * @wordpress-plugin
  * Plugin Name:       cwd_events
@@ -43,7 +43,7 @@ define( 'CWD_EVENTS_VERSION', '1.0.0' );
  */
 function activate_cwd_events() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-cwd_events-activator.php';
-	Cwd_events_Activator::activate();
+	Cwd_Events_Activator::activate();
 }
 
 /**
@@ -52,7 +52,7 @@ function activate_cwd_events() {
  */
 function deactivate_cwd_events() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-cwd_events-deactivator.php';
-	Cwd_events_Deactivator::deactivate();
+	Cwd_Events_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_cwd_events' );
@@ -75,7 +75,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-cwd_events.php';
  */
 function run_cwd_events() {
 
-	$plugin = new Cwd_events();
+	$plugin = new Cwd_Events();
 	$plugin->run();
 
 }
