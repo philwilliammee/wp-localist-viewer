@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Added plugin
 - src folder for compiling js with compiled output
 - wp boiler plate from [wppb.mw](https://wppb.me/)
 
