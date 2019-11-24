@@ -130,7 +130,7 @@ class Cwd_Events {
 		/**
 		 * Custom events widgets.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'widgets/cwd_events-widget.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'widgets/class-cwd-events-widget.php';
 
 		$this->loader = new Cwd_Events_Loader();
 
