@@ -17,12 +17,15 @@ class Cwd_Events_Widget extends WP_Widget {
 	 * The main constructor.
 	 */
 	public function __construct() {
+		$widget_ops = array(
+			'classname'                   => 'cwd_events_widget',
+			'description'                 => 'Adds a localist event widget.',
+			'customize_selective_refresh' => true,
+		);
 		parent::__construct(
 			'cwd_events_widget',
 			__( 'Events Widget', 'text_domain' ),
-			array(
-				'customize_selective_refresh' => true,
-			)
+			$widget_ops
 		);
 	}
 
@@ -32,17 +35,34 @@ class Cwd_Events_Widget extends WP_Widget {
 	 * @param object $instance The widget instance.
 	 */
 	public function form( $instance ) {
-		/* ... */
+		$heading = ! empty( $instance['heading'] ) ? $instance['heading'] : esc_html__( 'Heading', 'text_domain' );
+		?>
+		<p>
+		<label for="<?php echo esc_attr( $this->get_field_id( 'heading' ) ); ?>">
+		<?php esc_attr_e( 'Heading:', 'text_domain' ); ?>
+		</label>
+
+		<input
+			class="widefat"
+			id="<?php echo esc_attr( $this->get_field_id( 'heading' ) ); ?>"
+			name="<?php echo esc_attr( $this->get_field_name( 'heading' ) ); ?>"
+			type="text"
+			value="<?php echo esc_attr( $heading ); ?>">
+		</p>
+		<?php
 	}
 
 	/**
 	 * Update widget settings
 	 *
-	 * @param object $new_instance The widget updated instance.
-	 * @param object $old_instance The widget old instance.
+	 * @param array $new_instance Settings as submitted by the user.
+	 * @param array $old_instance settings as stored in the database.
 	 */
 	public function update( $new_instance, $old_instance ) {
-		/* ... */
+		$instance          = array();
+		$instance['heading'] = ( ! empty( $new_instance['heading'] ) ) ? wp_strip_all_tags( $new_instance['heading'] ) : '';
+
+		return $instance;
 	}
 
 	/**
@@ -52,7 +72,12 @@ class Cwd_Events_Widget extends WP_Widget {
 	 * @param object $instance The widget instance.
 	 */
 	public function widget( $args, $instance ) {
-		// @todo move configuration to form
+		// echo $args['before_widget'];
+		// if ( ! empty( $instance['title'] ) ) {
+		// 	echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
+		// } else{
+		// 	echo 'title is empty';
+		// }
 		?>
 		<div id="cwd_events_widget"
 			class= "events-listing cwd-events-style"
@@ -63,7 +88,7 @@ class Cwd_Events_Widget extends WP_Widget {
 			data-format= "modern_compact"
 			data-group= ""
 			data-keyword= ""
-			data-heading= ""
+			data-heading= "<?php echo esc_html( $instance['heading'] ); ?>"
 			data-filterby= "none"
 			data-calendarurl= "//events.cornell.edu/api/2.1/events"
 			data-apikey= ""
@@ -80,6 +105,7 @@ class Cwd_Events_Widget extends WP_Widget {
 		>
 		</div>
 		<?php
+		// echo $args['after_widget'];
 	}
 
 }
