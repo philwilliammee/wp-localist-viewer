@@ -71,6 +71,7 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $target ); ?>"
 			>
 		</p>
+
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'heading' ) ); ?>">
 				<?php esc_attr_e( 'Heading:', 'text_domain' ); ?>
@@ -97,7 +98,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'entries' ) ); ?>">
 				<?php esc_attr_e( 'entries:', 'text_domain' ); ?>
@@ -110,7 +110,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $entries ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'daysahead' ) ); ?>">
@@ -125,7 +124,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'format' ) ); ?>">
 				<?php esc_attr_e( 'format:', 'text_domain' ); ?>
@@ -138,7 +136,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $format ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'group' ) ); ?>">
@@ -153,7 +150,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'keyword' ) ); ?>">
 				<?php esc_attr_e( 'keyword:', 'text_domain' ); ?>
@@ -166,7 +162,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $keyword ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'filterby' ) ); ?>">
@@ -181,7 +176,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'calendarurl' ) ); ?>">
 				<?php esc_attr_e( 'calendarurl:', 'text_domain' ); ?>
@@ -194,7 +188,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $calendarurl ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'apikey' ) ); ?>">
@@ -209,7 +202,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hideaddcal' ) ); ?>">
 				<?php esc_attr_e( 'hideaddcal:', 'text_domain' ); ?>
@@ -222,7 +214,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $hideaddcal ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hidedescription' ) ); ?>">
@@ -237,7 +228,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'truncatedescription' ) ); ?>">
 				<?php esc_attr_e( 'truncatedescription:', 'text_domain' ); ?>
@@ -250,7 +240,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $truncatedescription ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hideimages' ) ); ?>">
@@ -265,7 +254,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hidepagination' ) ); ?>">
 				<?php esc_attr_e( 'hidepagination:', 'text_domain' ); ?>
@@ -278,7 +266,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $hidepagination ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'wrapperclass' ) ); ?>">
@@ -293,7 +280,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'listclass' ) ); ?>">
 				<?php esc_attr_e( 'listclass:', 'text_domain' ); ?>
@@ -306,7 +292,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $listclass ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'itemclass' ) ); ?>">
@@ -321,7 +306,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'readmore' ) ); ?>">
 				<?php esc_attr_e( 'readmore:', 'text_domain' ); ?>
@@ -334,7 +318,6 @@ class Cwd_Events_Widget extends WP_Widget {
 				value="<?php echo esc_attr( $readmore ); ?>"
 			>
 		</p>
-
 
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'url' ) ); ?>">
@@ -358,8 +341,28 @@ class Cwd_Events_Widget extends WP_Widget {
 	 * @param array $old_instance settings as stored in the database.
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance            = array();
-		$instance['heading'] = ( ! empty( $new_instance['heading'] ) ) ? wp_strip_all_tags( $new_instance['heading'] ) : '';
+		$instance                        = array();
+		$instance['heading']             = ( ! empty( $new_instance['heading'] ) ) ? wp_strip_all_tags( $new_instance['heading'] ) : '';
+		$instance['target']              = ( ! empty( $new_instance['target'] ) ) ? wp_strip_all_tags( $new_instance['target'] ) : '';
+		$instance['depts']               = ( ! empty( $new_instance['depts'] ) ) ? wp_strip_all_tags( $new_instance['depts'] ) : '';
+		$instance['entries']             = ( ! empty( $new_instance['entries'] ) ) ? wp_strip_all_tags( $new_instance['entries'] ) : '';
+		$instance['daysahead']           = ( ! empty( $new_instance['daysahead'] ) ) ? wp_strip_all_tags( $new_instance['daysahead'] ) : '';
+		$instance['format']              = ( ! empty( $new_instance['format'] ) ) ? wp_strip_all_tags( $new_instance['format'] ) : '';
+		$instance['group']               = ( ! empty( $new_instance['group'] ) ) ? wp_strip_all_tags( $new_instance['group'] ) : '';
+		$instance['keyword']             = ( ! empty( $new_instance['keyword'] ) ) ? wp_strip_all_tags( $new_instance['keyword'] ) : '';
+		$instance['filterby']            = ( ! empty( $new_instance['filterby'] ) ) ? wp_strip_all_tags( $new_instance['filterby'] ) : '';
+		$instance['calendarurl']         = ( ! empty( $new_instance['calendarurl'] ) ) ? wp_strip_all_tags( $new_instance['calendarurl'] ) : '';
+		$instance['apikey']              = ( ! empty( $new_instance['apikey'] ) ) ? wp_strip_all_tags( $new_instance['apikey'] ) : '';
+		$instance['hideaddcal']          = ( ! empty( $new_instance['hideaddcal'] ) ) ? wp_strip_all_tags( $new_instance['hideaddcal'] ) : '';
+		$instance['hidedescription']     = ( ! empty( $new_instance['hidedescription'] ) ) ? wp_strip_all_tags( $new_instance['hidedescription'] ) : '';
+		$instance['truncatedescription'] = ( ! empty( $new_instance['truncatedescription'] ) ) ? wp_strip_all_tags( $new_instance['truncatedescription'] ) : '';
+		$instance['hideimages']          = ( ! empty( $new_instance['hideimages'] ) ) ? wp_strip_all_tags( $new_instance['hideimages'] ) : '';
+		$instance['hidepagination']      = ( ! empty( $new_instance['hidepagination'] ) ) ? wp_strip_all_tags( $new_instance['hidepagination'] ) : '';
+		$instance['wrapperclass']        = ( ! empty( $new_instance['wrapperclass'] ) ) ? wp_strip_all_tags( $new_instance['wrapperclass'] ) : '';
+		$instance['listclass']           = ( ! empty( $new_instance['listclass'] ) ) ? wp_strip_all_tags( $new_instance['listclass'] ) : '';
+		$instance['itemclass']           = ( ! empty( $new_instance['itemclass'] ) ) ? wp_strip_all_tags( $new_instance['itemclass'] ) : '';
+		$instance['readmore']            = ( ! empty( $new_instance['readmore'] ) ) ? wp_strip_all_tags( $new_instance['readmore'] ) : '';
+		$instance['url']                 = ( ! empty( $new_instance['url'] ) ) ? wp_strip_all_tags( $new_instance['url'] ) : '';
 
 		return $instance;
 	}
@@ -374,29 +377,29 @@ class Cwd_Events_Widget extends WP_Widget {
 		// $args['before_widget'] widget is unused.
 		// @TODO consider using it.
 		?>
-		<div id="cwd_events_widget"
+		<div id= "<?php echo esc_html( $instance['target'] ); ?>"
 			class= "events-listing cwd-events-style"
-			data-target= "cwd_events_widget"
-			data-depts= ""
-			data-entries= "3"
-			data-daysahead= "-1"
-			data-format= "modern_compact"
-			data-group= ""
-			data-keyword= ""
 			data-heading= "<?php echo esc_html( $instance['heading'] ); ?>"
-			data-filterby= "none"
-			data-calendarurl= "//events.cornell.edu/api/2.1/events"
-			data-apikey= ""
-			data-hideaddcal= "true"
-			data-hidedescription= ""
-			data-truncatedescription= "150"
-			data-hideimages= "true"
-			data-hidepagination= "true"
-			data-wrapperclass= ""
-			data-listclass= ""
-			data-itemclass= ""
-			data-readmore= ""
-			data-url= ""
+			data-target= "<?php echo esc_html( $instance['target'] ); ?>"
+			data-depts= "<?php echo esc_html( $instance['depts'] ); ?>"
+			data-entries= "<?php echo esc_html( $instance['entries'] ); ?>"
+			data-daysahead= "<?php echo esc_html( $instance['daysahead'] ); ?>"
+			data-format= "<?php echo esc_html( $instance['format'] ); ?>"
+			data-group= "<?php echo esc_html( $instance['group'] ); ?>"
+			data-keyword= "<?php echo esc_html( $instance['keyword'] ); ?>"
+			data-filterby= "<?php echo esc_html( $instance['filterby'] ); ?>"
+			data-calendarurl= "<?php echo esc_html( $instance['calendarurl'] ); ?>"
+			data-apikey= "<?php echo esc_html( $instance['apikey'] ); ?>"
+			data-hideaddcal= "<?php echo esc_html( $instance['hideaddcal'] ); ?>"
+			data-hidedescription= "<?php echo esc_html( $instance['hidedescription'] ); ?>"
+			data-truncatedescription= "<?php echo esc_html( $instance['truncatedescription'] ); ?>"
+			data-hideimages= "<?php echo esc_html( $instance['hideimages'] ); ?>"
+			data-hidepagination= "<?php echo esc_html( $instance['hidepagination'] ); ?>"
+			data-wrapperclass= "<?php echo esc_html( $instance['wrapperclass'] ); ?>"
+			data-listclass= "<?php echo esc_html( $instance['listclass'] ); ?>"
+			data-itemclass= "<?php echo esc_html( $instance['itemclass'] ); ?>"
+			data-readmore= "<?php echo esc_html( $instance['readmore'] ); ?>"
+			data-url= "<?php echo esc_html( $instance['url'] ); ?>"
 		>
 		</div>
 		<?php
