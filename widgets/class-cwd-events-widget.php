@@ -128,13 +128,30 @@ class Cwd_Events_Widget extends WP_Widget {
 			<label for="<?php echo esc_attr( $this->get_field_id( 'format' ) ); ?>">
 				<?php esc_attr_e( 'format:', 'text_domain' ); ?>
 			</label>
-			<input
+			<select
 				class="widefat"
 				id="<?php echo esc_attr( $this->get_field_id( 'format' ) ); ?>"
 				name="<?php echo esc_attr( $this->get_field_name( 'format' ) ); ?>"
-				type="text"
-				value="<?php echo esc_attr( $format ); ?>"
 			>
+			<?php
+			$options = array(
+				'modern_standard' => __( 'modern_standard', 'text_domain' ),
+				'modern_compact'  => __( 'modern_compact', 'text_domain' ),
+				'standard'        => __( 'standard', 'text_domain' ),
+				'compact'         => __( 'compact', 'text_domain' ),
+				'inline_compact'  => __( 'inline_compact', 'text_domain' ),
+			);
+			foreach ( $options as $key => $name ) {
+				echo '<option value="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '" ' . selected( $format, $key, false ) . '>' . esc_attr( $name ) . '</option>';
+			}
+			?>
+
+			</select>
+
+
+
+
+
 		</p>
 
 		<p>
