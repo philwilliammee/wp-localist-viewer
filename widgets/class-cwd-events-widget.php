@@ -203,16 +203,16 @@ class Cwd_Events_Widget extends WP_Widget {
 		</p>
 
 		<p>
+			<input
+				id="<?php echo esc_attr( $this->get_field_id( 'hideaddcal' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'hideaddcal' ) ); ?>"
+				type="checkbox"
+				value="true"
+				<?php checked( 'true', $hideaddcal ); ?>
+			>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hideaddcal' ) ); ?>">
 				<?php esc_attr_e( 'hideaddcal:', 'text_domain' ); ?>
 			</label>
-			<input
-				class="widefat"
-				id="<?php echo esc_attr( $this->get_field_id( 'hideaddcal' ) ); ?>"
-				name="<?php echo esc_attr( $this->get_field_name( 'hideaddcal' ) ); ?>"
-				type="text"
-				value="<?php echo esc_attr( $hideaddcal ); ?>"
-			>
 		</p>
 
 		<p>
