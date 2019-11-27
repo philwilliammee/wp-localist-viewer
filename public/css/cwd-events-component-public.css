@@ -232,7 +232,7 @@
 @media only screen and (min-width: 1200px) {
   .cwd-events-style section.standard .events-listing .type {
     display: block;
-    max-width: 19%;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -315,7 +315,7 @@
 }
 
 .cwd-events-style section.standard .events-listing.compact .location {
-  width: 70%;
+  width: 80%;
 }
 
 .cwd-events-style section.standard .events-listing.no-thumbnails .description,

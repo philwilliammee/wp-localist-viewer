@@ -142,7 +142,7 @@ section.standard .events-listing {
     @media only screen and (min-width: 1200px) {
         .type {
             display: block;
-            max-width: 19%;
+            width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;

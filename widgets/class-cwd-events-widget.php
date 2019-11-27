@@ -42,7 +42,7 @@ class Cwd_Events_Widget extends WP_Widget {
 		$entries             = ! empty( $instance['entries'] ) ? $instance['entries'] : esc_html__( '3', 'text_domain' );
 		$daysahead           = ! empty( $instance['daysahead'] ) ? $instance['daysahead'] : esc_html__( '365', 'text_domain' );
 		$format              = ! empty( $instance['format'] ) ? $instance['format'] : esc_html__( 'modern_compact', 'text_domain' );
-		$group               = ! empty( $instance['group'] ) ? $instance['group'] : esc_html__( 'dept', 'text_domain' );
+		$group               = ! empty( $instance['group'] ) ? $instance['group'] : esc_html__( '0', 'text_domain' );
 		$keyword             = ! empty( $instance['keyword'] ) ? $instance['keyword'] : esc_html__( '0', 'text_domain' );
 		$filterby            = ! empty( $instance['filterby'] ) ? $instance['filterby'] : esc_html__( '0', 'text_domain' );
 		$calendarurl         = ! empty( $instance['calendarurl'] ) ? $instance['calendarurl'] : esc_html__( '//events.cornell.edu/api/2.1/events', 'text_domain' );
@@ -145,13 +145,7 @@ class Cwd_Events_Widget extends WP_Widget {
 				echo '<option value="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '" ' . selected( $format, $key, false ) . '>' . esc_attr( $name ) . '</option>';
 			}
 			?>
-
 			</select>
-
-
-
-
-
 		</p>
 
 		<p>
@@ -180,17 +174,29 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
+
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'filterby' ) ); ?>">
 				<?php esc_attr_e( 'filterby:', 'text_domain' ); ?>
 			</label>
-			<input
+			<select
 				class="widefat"
 				id="<?php echo esc_attr( $this->get_field_id( 'filterby' ) ); ?>"
 				name="<?php echo esc_attr( $this->get_field_name( 'filterby' ) ); ?>"
-				type="text"
-				value="<?php echo esc_attr( $filterby ); ?>"
 			>
+			<?php
+
+			$options = array(
+				'none'  => __( 'none', 'text_domain' ),
+				'group' => __( 'group', 'text_domain' ),
+				'dept'  => __( 'dept', 'text_domain' ),
+				'type'  => __( 'type', 'text_domain' ),
+			);
+			foreach ( $options as $key => $name ) {
+				echo '<option value="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '" ' . selected( $filterby, $key, false ) . '>' . esc_attr( $name ) . '</option>';
+			}
+			?>
+			</select>
 		</p>
 
 		<p>
@@ -233,16 +239,16 @@ class Cwd_Events_Widget extends WP_Widget {
 		</p>
 
 		<p>
+			<input
+				id="<?php echo esc_attr( $this->get_field_id( 'hidedescription' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'hidedescription' ) ); ?>"
+				type="checkbox"
+				value="true"
+				<?php checked( 'true', $hidedescription ); ?>
+			>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hidedescription' ) ); ?>">
 				<?php esc_attr_e( 'hidedescription:', 'text_domain' ); ?>
 			</label>
-			<input
-				class="widefat"
-				id="<?php echo esc_attr( $this->get_field_id( 'hidedescription' ) ); ?>"
-				name="<?php echo esc_attr( $this->get_field_name( 'hidedescription' ) ); ?>"
-				type="text"
-				value="<?php echo esc_attr( $hidedescription ); ?>"
-			>
 		</p>
 
 		<p>
@@ -259,29 +265,29 @@ class Cwd_Events_Widget extends WP_Widget {
 		</p>
 
 		<p>
+			<input
+				id="<?php echo esc_attr( $this->get_field_id( 'hideimages' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'hideimages' ) ); ?>"
+				type="checkbox"
+				value="true"
+				<?php checked( 'true', $hideimages ); ?>
+			>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hideimages' ) ); ?>">
 				<?php esc_attr_e( 'hideimages:', 'text_domain' ); ?>
 			</label>
-			<input
-				class="widefat"
-				id="<?php echo esc_attr( $this->get_field_id( 'hideimages' ) ); ?>"
-				name="<?php echo esc_attr( $this->get_field_name( 'hideimages' ) ); ?>"
-				type="text"
-				value="<?php echo esc_attr( $hideimages ); ?>"
-			>
 		</p>
 
 		<p>
+			<input
+				id="<?php echo esc_attr( $this->get_field_id( 'hidepagination' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'hidepagination' ) ); ?>"
+				type="checkbox"
+				value="true"
+				<?php checked( 'true', $hidepagination ); ?>
+			>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'hidepagination' ) ); ?>">
 				<?php esc_attr_e( 'hidepagination:', 'text_domain' ); ?>
 			</label>
-			<input
-				class="widefat"
-				id="<?php echo esc_attr( $this->get_field_id( 'hidepagination' ) ); ?>"
-				name="<?php echo esc_attr( $this->get_field_name( 'hidepagination' ) ); ?>"
-				type="text"
-				value="<?php echo esc_attr( $hidepagination ); ?>"
-			>
 		</p>
 
 		<p>
