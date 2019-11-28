@@ -132,6 +132,12 @@ class Cwd_Events {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'widgets/class-cwd-events-widget.php';
 
+		/**
+		 * The class responsible for orchestrating the actions and filters of the
+		 * core plugin.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'page-templater/class-cwd-events-pagetemplater.php';
+
 		$this->loader = new Cwd_Events_Loader();
 
 	}
@@ -167,6 +173,7 @@ class Cwd_Events {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'widgets_init', $plugin_admin, 'register_widgets' );
+		$this->loader->add_action( 'widgets_init', $plugin_admin, 'register_sidebars' );
 
 	}
 

@@ -110,4 +110,24 @@ class Cwd_Events_Admin {
 		register_widget( 'Cwd_Events_Widget' );
 
 	}
+
+	/**
+	 * Create a widget area that can be used in template.
+	 *
+	 * @todo this can be moved to the users theme.
+	 */
+	public function register_sidebars() {
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Events After Content', 'cwd-events' ),
+				'id'            => 'cwd-events-page-after-content-widget-area',
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3 class="widgettitle">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+	}
 }
