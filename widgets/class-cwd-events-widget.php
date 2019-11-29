@@ -174,7 +174,6 @@ class Cwd_Events_Widget extends WP_Widget {
 			>
 		</p>
 
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'filterby' ) ); ?>">
 				<?php esc_attr_e( 'filterby:', 'text_domain' ); ?>
