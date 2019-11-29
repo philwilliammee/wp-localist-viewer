@@ -128,7 +128,7 @@ class Cwd_Events {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-cwd-events-public.php';
 
 		/**
-		 * Custom events widgets.
+		 * Custom events widgets with form.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'widgets/class-cwd-events-widget.php';
 

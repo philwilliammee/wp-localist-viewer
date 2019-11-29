@@ -36,27 +36,27 @@ class Cwd_Events_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		// Set the default values.
-		$heading             = ! empty( $instance['heading'] ) ? $instance['heading'] : esc_html__( 'Localist-Viewer', 'text_domain' );
-		$target              = ! empty( $instance['target'] ) ? $instance['target'] : esc_html__( 'cwd_events_id', 'text_domain' );
-		$depts               = ! empty( $instance['depts'] ) ? $instance['depts'] : esc_html__( '0', 'text_domain' );
-		$entries             = ! empty( $instance['entries'] ) ? $instance['entries'] : esc_html__( '3', 'text_domain' );
-		$daysahead           = ! empty( $instance['daysahead'] ) ? $instance['daysahead'] : esc_html__( '365', 'text_domain' );
-		$format              = ! empty( $instance['format'] ) ? $instance['format'] : esc_html__( 'modern_compact', 'text_domain' );
-		$group               = ! empty( $instance['group'] ) ? $instance['group'] : esc_html__( '0', 'text_domain' );
-		$keyword             = ! empty( $instance['keyword'] ) ? $instance['keyword'] : esc_html__( '0', 'text_domain' );
-		$filterby            = ! empty( $instance['filterby'] ) ? $instance['filterby'] : esc_html__( '0', 'text_domain' );
-		$calendarurl         = ! empty( $instance['calendarurl'] ) ? $instance['calendarurl'] : esc_html__( '//events.cornell.edu/api/2.1/events', 'text_domain' );
-		$apikey              = ! empty( $instance['apikey'] ) ? $instance['apikey'] : esc_html__( '0', 'text_domain' );
-		$hideaddcal          = ! empty( $instance['hideaddcal'] ) ? $instance['hideaddcal'] : esc_html__( '0', 'text_domain' );
-		$hidedescription     = ! empty( $instance['hidedescription'] ) ? $instance['hidedescription'] : esc_html__( '0', 'text_domain' );
-		$truncatedescription = ! empty( $instance['truncatedescription'] ) ? $instance['truncatedescription'] : esc_html__( '150', 'text_domain' );
-		$hideimages          = ! empty( $instance['hideimages'] ) ? $instance['hideimages'] : esc_html__( 'false', 'text_domain' );
-		$hidepagination      = ! empty( $instance['hidepagination'] ) ? $instance['hidepagination'] : esc_html__( 'false', 'text_domain' );
-		$wrapperclass        = ! empty( $instance['wrapperclass'] ) ? $instance['wrapperclass'] : esc_html__( 'cwd-card-grid three-card', 'text_domain' );
-		$listclass           = ! empty( $instance['listclass'] ) ? $instance['listclass'] : esc_html__( 'cards', 'text_domain' );
-		$itemclass           = ! empty( $instance['itemclass'] ) ? $instance['itemclass'] : esc_html__( 'card', 'text_domain' );
-		$readmore            = ! empty( $instance['readmore'] ) ? $instance['readmore'] : esc_html__( 'Read More »', 'text_domain' );
-		$url                 = ! empty( $instance['url'] ) ? $instance['url'] : esc_html__( '/events', 'text_domain' );
+		$heading             = isset( $instance['heading'] ) ? $instance['heading'] : esc_html__( 'Movie Events', 'text_domain' );
+		$target              = isset( $instance['target'] ) ? $instance['target'] : esc_html__( 'cwd_events_id', 'text_domain' );
+		$depts               = isset( $instance['depts'] ) ? $instance['depts'] : esc_html__( '4199', 'text_domain' );
+		$entries             = isset( $instance['entries'] ) ? $instance['entries'] : esc_html__( '3', 'text_domain' );
+		$daysahead           = isset( $instance['daysahead'] ) ? $instance['daysahead'] : esc_html__( '-365', 'text_domain' );
+		$format              = isset( $instance['format'] ) ? $instance['format'] : esc_html__( 'modern_compact', 'text_domain' );
+		$group               = isset( $instance['group'] ) ? $instance['group'] : esc_html__( '6895', 'text_domain' );
+		$keyword             = isset( $instance['keyword'] ) ? $instance['keyword'] : esc_html__( 'movie', 'text_domain' );
+		$filterby            = isset( $instance['filterby'] ) ? $instance['filterby'] : esc_html__( 'dept', 'text_domain' );
+		$calendarurl         = isset( $instance['calendarurl'] ) ? $instance['calendarurl'] : esc_html__( '//events.cornell.edu/api/2.1/events', 'text_domain' );
+		$apikey              = isset( $instance['apikey'] ) ? $instance['apikey'] : '';
+		$hideaddcal          = isset( $instance['hideaddcal'] ) ? $instance['hideaddcal'] : esc_html__( 'false', 'text_domain' );
+		$hidedescription     = isset( $instance['hidedescription'] ) ? $instance['hidedescription'] : esc_html__( 'false', 'text_domain' );
+		$truncatedescription = isset( $instance['truncatedescription'] ) ? $instance['truncatedescription'] : esc_html__( '150', 'text_domain' );
+		$hideimages          = isset( $instance['hideimages'] ) ? $instance['hideimages'] : esc_html__( 'false', 'text_domain' );
+		$hidepagination      = isset( $instance['hidepagination'] ) ? $instance['hidepagination'] : esc_html__( 'false', 'text_domain' );
+		$wrapperclass        = isset( $instance['wrapperclass'] ) ? $instance['wrapperclass'] : esc_html__( 'cwd-card-grid three-card', 'text_domain' );
+		$listclass           = isset( $instance['listclass'] ) ? $instance['listclass'] : esc_html__( 'cards', 'text_domain' );
+		$itemclass           = isset( $instance['itemclass'] ) ? $instance['itemclass'] : esc_html__( 'card', 'text_domain' );
+		$readmore            = isset( $instance['readmore'] ) ? $instance['readmore'] : esc_html__( 'All Events »', 'text_domain' );
+		$url                 = isset( $instance['url'] ) ? $instance['url'] : esc_html__( '/events', 'text_domain' );
 		?>
 		<!-- Start the form -->
 		<p>
@@ -364,7 +364,7 @@ class Cwd_Events_Widget extends WP_Widget {
 	 * @param array $old_instance settings as stored in the database.
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance                        = array();
+		$instance                        = $old_instance;
 		$instance['heading']             = ( ! empty( $new_instance['heading'] ) ) ? wp_strip_all_tags( $new_instance['heading'] ) : '';
 		$instance['target']              = ( ! empty( $new_instance['target'] ) ) ? wp_strip_all_tags( $new_instance['target'] ) : '';
 		$instance['depts']               = ( ! empty( $new_instance['depts'] ) ) ? wp_strip_all_tags( $new_instance['depts'] ) : '';
