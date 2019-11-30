@@ -1,0 +1,39 @@
+{
+    "name": "philwilliammee/wp-localist-viewer",
+    "description": "manages plugins",
+    "authors": [
+        {
+            "name": "philwilliammee",
+            "email": "admin@example.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "philwilliammee/wp-localist-viewer",
+            "version": "dev-master",
+            "type": "wordpress-plugin",
+            "dist": {
+              "type": "zip",
+              "url": "https://github.com/philwilliammee/wp-localist-viewer/archive/master.zip"
+            }
+          }
+        }
+      ],
+      "require": {
+        "composer/installers": "~1.0",
+        "philwilliammee/wp-localist-viewer": "dev-master#8e7b3fe"
+      },
+      "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+
+}

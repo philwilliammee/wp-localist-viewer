@@ -7,20 +7,20 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              philwilliammee.com
+ * @link              https://github.com/philwilliammee/wp-localist-viewer
  * @since             1.0.0
  * @package           Cwd_Events
  *
  * @wordpress-plugin
- * Plugin Name:       cwd_events
+ * Plugin Name:       CWD Events
  * Plugin URI:        https://github.com/philwilliammee/wp-localist-viewer
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       A plugin to use Localist Events Viewer.
  * Version:           1.0.0
  * Author:            Philwilliammee
- * Author URI:        philwilliammee.com
+ * Author URI:        https://github.com/philwilliammee/wp-localist-viewer
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       cwd-events
+ * Text Domain:       CWD Events
  * Domain Path:       /languages
  */
 
