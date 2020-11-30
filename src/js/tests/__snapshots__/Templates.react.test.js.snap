@@ -1,0 +1,2370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Classic Enabled 1`] = `
+<div
+  className="view view-events view-id-events cuenergy-events test wrapper"
+>
+  <div
+    className="events-list view-content test lists"
+  >
+    <div
+      className="views-row test item"
+    >
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-12 event-title-and-location"
+          >
+            <div>
+              <a
+                href="http://events.cornell.edu/event/artists_scientists_pollinator_health"
+              >
+                PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+              </a>
+            </div>
+            <div>
+              <span
+                className="event-date"
+              >
+                August 21
+              </span>
+              -
+              8:00 am
+               | Mann Library
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="views-row test item"
+    >
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-12 event-title-and-location"
+          >
+            <div>
+              <a
+                href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm"
+              >
+                Work Party at Dilmun Hill Student Farm
+              </a>
+            </div>
+            <div>
+              <span
+                className="event-date"
+              >
+                August 21
+              </span>
+              -
+              4:00 pm
+               | Dilmun Hill Student Farm (Cornell AES)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="views-row test item"
+    >
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-12 event-title-and-location"
+          >
+            <div>
+              <a
+                href="http://events.cornell.edu/event/saturday_garden_tours_6546"
+              >
+                Saturday Garden Tours
+              </a>
+            </div>
+            <div>
+              <span
+                className="event-date"
+              >
+                August 24
+              </span>
+              -
+              11:00 am
+               | Brian C. Nevin Welcome Center
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="views-row test item"
+    >
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-12 event-title-and-location"
+          >
+            <div>
+              <a
+                href="http://events.cornell.edu/event/honeyland"
+              >
+                Honeyland
+              </a>
+            </div>
+            <div>
+              <span
+                className="event-date"
+              >
+                September 5
+              </span>
+              -
+              7:00 pm
+               | Willard Straight Theatre
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InlineCompact Enabled 1`] = `
+<section
+  className="modern"
+  id="eventsInlineCompact"
+  title="Events List"
+>
+  <div
+    className="main-body"
+  >
+    <div
+      className="cwd-component compact events-listing test wrapper"
+    >
+      <div
+        className="events-list view-content test lists"
+      >
+        <div
+          className="views-row test item"
+        >
+          <div
+            className="container-fluid"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-2 event-month-and-day"
+              >
+                <div>
+                  <span
+                    className="event-month"
+                  >
+                    Aug
+                  </span>
+                  <span
+                    className="event-day"
+                  >
+                    21
+                  </span>
+                </div>
+              </div>
+              <div
+                className="col-sm-8 event-title-and-location"
+              >
+                <div
+                  className="event-title"
+                >
+                  <a
+                    href="http://events.cornell.edu/event/artists_scientists_pollinator_health"
+                    hrefLang="en"
+                  >
+                    PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                  </a>
+                </div>
+                <div
+                  className="event-times"
+                >
+                  <span
+                    className="fa fa-clock-o"
+                  />
+                  8:00 am
+                   - 5:00 pm
+                </div>
+                <div
+                  className="event-location"
+                >
+                  <span
+                    className="fa fa-map-marker"
+                  />
+                  Mann Library
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="views-row test item"
+        >
+          <div
+            className="container-fluid"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-2 event-month-and-day"
+              >
+                <div>
+                  <span
+                    className="event-month"
+                  >
+                    Aug
+                  </span>
+                  <span
+                    className="event-day"
+                  >
+                    21
+                  </span>
+                </div>
+              </div>
+              <div
+                className="col-sm-8 event-title-and-location"
+              >
+                <div
+                  className="event-title"
+                >
+                  <a
+                    href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm"
+                    hrefLang="en"
+                  >
+                    Work Party at Dilmun Hill Student Farm
+                  </a>
+                </div>
+                <div
+                  className="event-times"
+                >
+                  <span
+                    className="fa fa-clock-o"
+                  />
+                  4:00 pm
+                   - 7:00 pm
+                </div>
+                <div
+                  className="event-location"
+                >
+                  <span
+                    className="fa fa-map-marker"
+                  />
+                  Dilmun Hill Student Farm (Cornell AES)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="views-row test item"
+        >
+          <div
+            className="container-fluid"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-2 event-month-and-day"
+              >
+                <div>
+                  <span
+                    className="event-month"
+                  >
+                    Aug
+                  </span>
+                  <span
+                    className="event-day"
+                  >
+                    24
+                  </span>
+                </div>
+              </div>
+              <div
+                className="col-sm-8 event-title-and-location"
+              >
+                <div
+                  className="event-title"
+                >
+                  <a
+                    href="http://events.cornell.edu/event/saturday_garden_tours_6546"
+                    hrefLang="en"
+                  >
+                    Saturday Garden Tours
+                  </a>
+                </div>
+                <div
+                  className="event-times"
+                >
+                  <span
+                    className="fa fa-clock-o"
+                  />
+                  11:00 am
+                   - 12:00 pm
+                </div>
+                <div
+                  className="event-location"
+                >
+                  <span
+                    className="fa fa-map-marker"
+                  />
+                  Brian C. Nevin Welcome Center
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="views-row test item"
+        >
+          <div
+            className="container-fluid"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-2 event-month-and-day"
+              >
+                <div>
+                  <span
+                    className="event-month"
+                  >
+                    Sep
+                  </span>
+                  <span
+                    className="event-day"
+                  >
+                    5
+                  </span>
+                </div>
+              </div>
+              <div
+                className="col-sm-8 event-title-and-location"
+              >
+                <div
+                  className="event-title"
+                >
+                  <a
+                    href="http://events.cornell.edu/event/honeyland"
+                    hrefLang="en"
+                  >
+                    Honeyland
+                  </a>
+                </div>
+                <div
+                  className="event-times"
+                >
+                  <span
+                    className="fa fa-clock-o"
+                  />
+                  7:00 pm
+                   - 8:27 pm
+                </div>
+                <div
+                  className="event-location"
+                >
+                  <span
+                    className="fa fa-map-marker"
+                  />
+                  Willard Straight Theatre
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`ModernCompact Enabled 1`] = `
+<section
+  className="events-modern-compact modern"
+  title="Events List"
+>
+  <div
+    className="main-body"
+  >
+    <div
+      className="cwd-component compact events-listing  "
+    >
+      <div
+        className="events-filters-wrap"
+      >
+        <h3
+          className="hidden"
+        >
+          Show:
+        </h3>
+        <ul
+          className="events-filters"
+        >
+          <li>
+            <button
+              className="filter-btn active"
+              id="filterAll"
+              onClick={[Function]}
+              type="button"
+            >
+              All Events
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4205"
+              onClick={[Function]}
+              type="button"
+            >
+              Cornell University Library
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4216"
+              onClick={[Function]}
+              type="button"
+            >
+              Entomology
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4228"
+              onClick={[Function]}
+              type="button"
+            >
+              Mann Library
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4468"
+              onClick={[Function]}
+              type="button"
+            >
+              College of Agriculture and Life Sciences
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4204"
+              onClick={[Function]}
+              type="button"
+            >
+              Cornell University Agricultural Experiment Station
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter9901"
+              onClick={[Function]}
+              type="button"
+            >
+              Sustainability
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4820"
+              onClick={[Function]}
+              type="button"
+            >
+              Cornell Botanic Gardens
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4189"
+              onClick={[Function]}
+              type="button"
+            >
+              CALS Communications
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4199"
+              onClick={[Function]}
+              type="button"
+            >
+              Cornell Cinema
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4240"
+              onClick={[Function]}
+              type="button"
+            >
+              Mario Einaudi Center for International Studies
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="events-list view-content "
+      >
+        <div
+          className="event-node "
+        >
+          <div
+            className="events"
+          >
+            <a
+              className="group-link-wrapper field-group-link"
+              href="http://events.cornell.edu/event/artists_scientists_pollinator_health"
+            >
+              <div
+                className="group-image"
+              >
+                <img
+                  alt="PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health"
+                  height="150"
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1559744775-7a6bfcc4b824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                />
+              </div>
+              <time
+                dateTime="8:00 am"
+                title="August 21"
+              >
+                <span
+                  className="month"
+                >
+                  Aug
+                </span>
+                <span
+                  className="day"
+                >
+                  21
+                </span>
+              </time>
+              <div
+                className="field title"
+              >
+                <h3>
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                </h3>
+              </div>
+              <div
+                className="field meta"
+              >
+                <p>
+                  8:00 am
+                  , Mann Library
+                </p>
+              </div>
+              <div
+                className="field field-name-summary summary"
+              >
+                <p>
+                  Threats to pollinator health are intense and varied, from habitat loss and climate change to diseases and pesticides. A summer exhibit in the  Mann Ga…
+                </p>
+              </div>
+            </a>
+            <span
+              className="event-subscribe"
+            >
+              add to calendar 
+              <a
+                className="fa fa-google google"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190821%2F20190930&details=Threats%20to%20pollinator%20health%20are%20intense%20and%20varied%2C%20from%20habitat%20loss%20and%20climate%20change%20to%20diseases%20and%20pesticides.%20A%20summer%20exhibit%20in%20the%20%20Mann%20Gallery%2C%20PolliNation%3A%20Artists%20Crossing%20Borders%20with%20Scientists%20to%20Explore%20the%20Value%20of%20Pollinator%20Health%20showcases%20the%20results%20of%20a%20multi-year%20collaboration%20between%20Cornell%20entomologists%2C%20%20U.K.%20based%20scientists%20and%20Welsh%20artists%20who%2C%20crossing%20national%20and%20disciplinary%20boundaries%2C%20work%20to%20reveal%20and%20celebrate%20the%20beauty%20and%20importance%20of%20pollinators%2C%20and%20how%20their%20fate%20is%20linked%20to%20our%20planet%2C%20and%20to%20our%20own.%3Cbr%20%2F%3E%3Cbr%20%2F%3EThis%20exhibit%20is%20a%20collaboration%20between%20Mann%20Library%2C%20the%20Cornell%20Department%20of%20Entomology%20and%20the%20University%20of%20Wales%2C%20Trinity%20St.%20David.%20%20%3Cbr%20%2F%3E%3Cbr%20%2F%3EOn%20Friday%2C%20June%207%2C%20we%20will%20celebrate%20the%20exhibit%20with%20a%20special%20lecture%20%20by%20Cornell%20entomologist%20Scott%20McArt%2C%20a%20reception%20in%20the%20Mann%20Gallery%2C%20and%20a%20garden%20tour%20%20introducing%20participants%20to%20Cornell%E2%80%99s%20new%20%E2%80%9CBotanic%20Buzzline%E2%80%9D%20pollinator%20walkway%2C%20in%20the%20Cornell%20Botanic%20Gardens.%20All%20events%20are%20free%20and%20open%20to%20the%20public.%20%20%20%3Cbr%20%2F%3E%3Cbr%20%2F%3EFor%20more%20information%20visit%20us%20at%20mannlib.cornell.edu%2C%20find%20us%20at%20facebook.com%2Fmannlibrary%2C%20or%20call%20(607)%202550-3296&location=&sprop=website%3Aevents.cornell.edu&text=PolliNation%3A%20Artists%20%26%20Scientists%20Crossing%20Borders%20to%20Explore%20the%20Value%20of%20Pollinator%20Health"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Google Calendar"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                   to Google Calendar
+                </span>
+              </a>
+               
+              <a
+                className="fa fa-calendar apple"
+                href="http://events.cornell.edu/event/artists_scientists_pollinator_health.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to iCal"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                   to iCal
+                </span>
+              </a>
+              <a
+                className="fa fa-clock-o microsoft"
+                href="http://events.cornell.edu/event/artists_scientists_pollinator_health.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Outlook"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                   to Outlook
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          className="event-node "
+        >
+          <div
+            className="events"
+          >
+            <a
+              className="group-link-wrapper field-group-link"
+              href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm"
+            >
+              <div
+                className="group-image"
+              >
+                <img
+                  alt="Work Party at Dilmun Hill Student Farm"
+                  height="150"
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1563200599-6f03830c499d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80"
+                />
+              </div>
+              <time
+                dateTime="4:00 pm"
+                title="August 21"
+              >
+                <span
+                  className="month"
+                >
+                  Aug
+                </span>
+                <span
+                  className="day"
+                >
+                  21
+                </span>
+              </time>
+              <div
+                className="field title"
+              >
+                <h3>
+                  Work Party at Dilmun Hill Student Farm
+                </h3>
+              </div>
+              <div
+                className="field meta"
+              >
+                <p>
+                  4:00 pm
+                  , Dilmun Hill Student Farm (Cornell AES)
+                </p>
+              </div>
+              <div
+                className="field field-name-summary summary"
+              >
+                <p>
+                  Wednesdays, 4-7 pm
+Sundays, 2-5 pm
+at Dilmun Hill Student Farm
+
+Depending on the season, we will be installing beds, sowing, planting, weeding or harv…
+                </p>
+              </div>
+            </a>
+            <span
+              className="event-subscribe"
+            >
+              add to calendar 
+              <a
+                className="fa fa-google google"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190821%2F20191030&details=Wednesdays%2C%204-7%20pm%3Cbr%20%2F%3ESundays%2C%202-5%20pm%3Cbr%20%2F%3Eat%20Dilmun%20Hill%20Student%20Farm%3Cbr%20%2F%3E%3Cbr%20%2F%3EDepending%20on%20the%20season%2C%20we%20will%20be%20installing%20beds%2C%20sowing%2C%20planting%2C%20weeding%20or%20harvesting.%20Experience%20the%20latest%20in%20sustainable%20agriculture%2C%20join%20the%20Dilmun%20community%20and%20go%20home%20with%20delicious%2C%20fresh%20produce.%20Wear%20closed%20toe%20shoes%20and%20dress%20for%20the%20weather.%20No%20RSVP%20necessary%20-%20just%20come%20and%20join%20us.&location=&sprop=website%3Aevents.cornell.edu&text=Work%20Party%20at%20Dilmun%20Hill%20Student%20Farm"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Google Calendar"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Work Party at Dilmun Hill Student Farm
+                   to Google Calendar
+                </span>
+              </a>
+               
+              <a
+                className="fa fa-calendar apple"
+                href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to iCal"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Work Party at Dilmun Hill Student Farm
+                   to iCal
+                </span>
+              </a>
+              <a
+                className="fa fa-clock-o microsoft"
+                href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Outlook"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Work Party at Dilmun Hill Student Farm
+                   to Outlook
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          className="event-node "
+        >
+          <div
+            className="events"
+          >
+            <a
+              className="group-link-wrapper field-group-link"
+              href="http://events.cornell.edu/event/saturday_garden_tours_6546"
+            >
+              <div
+                className="group-image"
+              >
+                <img
+                  alt="Saturday Garden Tours"
+                  height="150"
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1568214697537-ace27ffd6cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                />
+              </div>
+              <time
+                dateTime="11:00 am"
+                title="August 24"
+              >
+                <span
+                  className="month"
+                >
+                  Aug
+                </span>
+                <span
+                  className="day"
+                >
+                  24
+                </span>
+              </time>
+              <div
+                className="field title"
+              >
+                <h3>
+                  Saturday Garden Tours
+                </h3>
+              </div>
+              <div
+                className="field meta"
+              >
+                <p>
+                  11:00 am
+                  , Brian C. Nevin Welcome Center
+                </p>
+              </div>
+              <div
+                className="field field-name-summary summary"
+              >
+                <p>
+                  Take a relaxing stroll with a Garden Guide through the gardens around the Nevin Welcome Center and discover the beauty and diversity of our cultivated…
+                </p>
+              </div>
+            </a>
+            <span
+              className="event-subscribe"
+            >
+              add to calendar 
+              <a
+                className="fa fa-google google"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190824%2F20190928&details=Take%20a%20relaxing%20stroll%20with%20a%20Garden%20Guide%20through%20the%20gardens%20around%20the%20Nevin%20Welcome%20Center%20and%20discover%20the%20beauty%20and%20diversity%20of%20our%20cultivated%20plant%20collections.%20Visit%20the%20Robison%20Herb%20Garden%2C%20Young%20Flower%20Garden%2C%20Bowers%20Rhododendron%20Collection%2C%20Shady%20Groundcover%20Collection%2C%20tropical%20container%20display%2C%20and%20more.%20Each%20tour%20will%20be%20a%20unique%20experience%2C%20as%20we%20observe%20the%20gardens%E2%80%99%20progression%20throughout%20the%20growing%20season.%20Tours%20are%20offered%20every%20Saturday%20at%2011%20a.m.%20and%204%20p.m.%2C%20June%2015%20through%20September%2028.%3Cbr%20%2F%3E%3Cbr%20%2F%3EFee%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%245-10%20suggested%20donation%3Cbr%20%2F%3E%3Cbr%20%2F%3EInstructors%3A%20%20%20%20%20%20%20%20Volunteer%20Garden%20Guides%20%3Cbr%20%2F%3E%3Cbr%20%2F%3ELocation%3A%20%20%20%20%20%20%20%20%20%20%20%20%20Meet%20at%20the%20Nevin%20Welcome%20Center&location=&sprop=website%3Aevents.cornell.edu&text=Saturday%20Garden%20Tours"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Google Calendar"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Saturday Garden Tours
+                   to Google Calendar
+                </span>
+              </a>
+               
+              <a
+                className="fa fa-calendar apple"
+                href="http://events.cornell.edu/event/saturday_garden_tours_6546.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to iCal"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Saturday Garden Tours
+                   to iCal
+                </span>
+              </a>
+              <a
+                className="fa fa-clock-o microsoft"
+                href="http://events.cornell.edu/event/saturday_garden_tours_6546.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Outlook"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Saturday Garden Tours
+                   to Outlook
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          className="event-node "
+        >
+          <div
+            className="events"
+          >
+            <a
+              className="group-link-wrapper field-group-link"
+              href="http://events.cornell.edu/event/honeyland"
+            >
+              <div
+                className="group-image"
+              >
+                <img
+                  alt="Honeyland"
+                  height="150"
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1554230513-961cc6696a80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                />
+              </div>
+              <time
+                dateTime="7:00 pm"
+                title="September 5"
+              >
+                <span
+                  className="month"
+                >
+                  Sep
+                </span>
+                <span
+                  className="day"
+                >
+                  5
+                </span>
+              </time>
+              <div
+                className="field title"
+              >
+                <h3>
+                  Honeyland
+                </h3>
+              </div>
+              <div
+                className="field meta"
+              >
+                <p>
+                  7:00 pm
+                  , Willard Straight Theatre
+                </p>
+              </div>
+              <div
+                className="field field-name-summary summary"
+              >
+                <p>
+                  Hatidze lives with her ailing mother in the mountains of Macedonia, making a living cultivating honey using ancient beekeeping traditions. When an unr…
+                </p>
+              </div>
+            </a>
+            <span
+              className="event-subscribe"
+            >
+              add to calendar 
+              <a
+                className="fa fa-google google"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190905%2F20190908&details=Hatidze%20lives%20with%20her%20ailing%20mother%20in%20the%20mountains%20of%20Macedonia%2C%20making%20a%20living%20cultivating%20honey%20using%20ancient%20beekeeping%20traditions.%20When%20an%20unruly%20family%20moves%20in%20next%20door%2C%20what%20at%20first%20seems%20like%20a%20balm%20for%20her%20solitude%20becomes%20a%20source%20of%20tension%20as%20they%2C%20too%2C%20want%20to%20practice%20beekeeping%2C%20while%20disregarding%20her%20advice.%22Honeyland%20is%20an%20unforgettable%20v%C2%8Erit%C2%8E%20character%20study%20and%20an%20intimate%20look%20at%20an%20endangered%20tradition.%22%20(The%20Hollywood%20Reporter)%22Far%20from%20a%20scolding%2C%20rub-your-nose-in-it%20depiction%20of%20environmental%20havoc%2C%20this%20is%20a%20tender%20story%20about%20the%20chaos%20of%20abandoning%20the%20common%20good.%22%20(IndieWire)The%20most%20awarded%20film%20at%20the%202019%20Sundance%20Film%20Festival.website%3A%20honeylandfilm.com&location=Willard%20Straight%20Theatre&sprop=website%3Aevents.cornell.edu&text=Honeyland"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Google Calendar"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Honeyland
+                   to Google Calendar
+                </span>
+              </a>
+               
+              <a
+                className="fa fa-calendar apple"
+                href="http://events.cornell.edu/event/honeyland.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to iCal"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Honeyland
+                   to iCal
+                </span>
+              </a>
+              <a
+                className="fa fa-clock-o microsoft"
+                href="http://events.cornell.edu/event/honeyland.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Outlook"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Honeyland
+                   to Outlook
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Standard Enabled 1`] = `
+<section
+  className="standard"
+  title="Events List"
+>
+  <div
+    className="main-body"
+  >
+    <div
+      className="events-listing  test wrapper"
+    >
+      <div
+        className="events-filters-wrap"
+      >
+        <h3
+          className="hidden"
+        >
+          Show:
+        </h3>
+        <ul
+          className="events-filters"
+        >
+          <li>
+            <button
+              className="filter-btn active"
+              id="filterAll"
+              onClick={[Function]}
+              type="button"
+            >
+              All Events
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter6895"
+              onClick={[Function]}
+              type="button"
+            >
+              Cornell Cinema
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="events-list test lists"
+      >
+        <div>
+          <h3
+            className="month-header"
+          >
+            August 2019
+          </h3>
+          <h4
+            className="day-header"
+          >
+            <span
+              className="fa fa-calendar-o"
+            />
+            8/21/2019
+          </h4>
+          <div
+            className="views-row"
+          >
+            <div
+              className="event-node node test item"
+            >
+              <div
+                className="events"
+              >
+                <div
+                  className="field title"
+                >
+                  <h3>
+                    <a
+                      href="http://events.cornell.edu/event/artists_scientists_pollinator_health"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                    </a>
+                  </h3>
+                </div>
+                <h4
+                  className="meta location"
+                >
+                  Mann Library
+                </h4>
+                <div>
+                  <h4
+                    className="meta date"
+                  >
+                    <span
+                      className="fulldate"
+                    >
+                      8:00 am
+                    </span>
+                  </h4>
+                  <h4
+                    className="meta type"
+                  >
+                    <span
+                      className="fa"
+                    />
+                    Exhibition
+                  </h4>
+                </div>
+                <div
+                  className="group-image"
+                >
+                  <img
+                    alt="PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health"
+                    height="150"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1559744775-7a6bfcc4b824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                  />
+                </div>
+                <div
+                  className="summary"
+                >
+                  <p
+                    className="description"
+                  >
+                    Threats to pollinator health are intense and varied, from habitat loss and climate change to diseases and pesticides. A summer exhibit in the  Mann Gallery, PolliNation: Artists Crossing Borders with Scientists to Explore the Value of Pollinator Heal…
+                    <a
+                      className="read-more more"
+                      href="http://events.cornell.edu/event/artists_scientists_pollinator_health"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                       read more
+                      <span
+                        className="visually-hidden"
+                      >
+                         about 
+                        PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                      </span>
+                    </a>
+                  </p>
+                </div>
+                <span
+                  className="event-subscribe"
+                >
+                  add to calendar 
+                  <a
+                    className="fa fa-google google"
+                    href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190821%2F20190930&details=Threats%20to%20pollinator%20health%20are%20intense%20and%20varied%2C%20from%20habitat%20loss%20and%20climate%20change%20to%20diseases%20and%20pesticides.%20A%20summer%20exhibit%20in%20the%20%20Mann%20Gallery%2C%20PolliNation%3A%20Artists%20Crossing%20Borders%20with%20Scientists%20to%20Explore%20the%20Value%20of%20Pollinator%20Health%20showcases%20the%20results%20of%20a%20multi-year%20collaboration%20between%20Cornell%20entomologists%2C%20%20U.K.%20based%20scientists%20and%20Welsh%20artists%20who%2C%20crossing%20national%20and%20disciplinary%20boundaries%2C%20work%20to%20reveal%20and%20celebrate%20the%20beauty%20and%20importance%20of%20pollinators%2C%20and%20how%20their%20fate%20is%20linked%20to%20our%20planet%2C%20and%20to%20our%20own.%3Cbr%20%2F%3E%3Cbr%20%2F%3EThis%20exhibit%20is%20a%20collaboration%20between%20Mann%20Library%2C%20the%20Cornell%20Department%20of%20Entomology%20and%20the%20University%20of%20Wales%2C%20Trinity%20St.%20David.%20%20%3Cbr%20%2F%3E%3Cbr%20%2F%3EOn%20Friday%2C%20June%207%2C%20we%20will%20celebrate%20the%20exhibit%20with%20a%20special%20lecture%20%20by%20Cornell%20entomologist%20Scott%20McArt%2C%20a%20reception%20in%20the%20Mann%20Gallery%2C%20and%20a%20garden%20tour%20%20introducing%20participants%20to%20Cornell%E2%80%99s%20new%20%E2%80%9CBotanic%20Buzzline%E2%80%9D%20pollinator%20walkway%2C%20in%20the%20Cornell%20Botanic%20Gardens.%20All%20events%20are%20free%20and%20open%20to%20the%20public.%20%20%20%3Cbr%20%2F%3E%3Cbr%20%2F%3EFor%20more%20information%20visit%20us%20at%20mannlib.cornell.edu%2C%20find%20us%20at%20facebook.com%2Fmannlibrary%2C%20or%20call%20(607)%202550-3296&location=&sprop=website%3Aevents.cornell.edu&text=PolliNation%3A%20Artists%20%26%20Scientists%20Crossing%20Borders%20to%20Explore%20the%20Value%20of%20Pollinator%20Health"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to Google Calendar"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                       to Google Calendar
+                    </span>
+                  </a>
+                   
+                  <a
+                    className="fa fa-calendar apple"
+                    href="http://events.cornell.edu/event/artists_scientists_pollinator_health.ics"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to iCal"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                       to iCal
+                    </span>
+                  </a>
+                  <a
+                    className="fa fa-clock-o microsoft"
+                    href="http://events.cornell.edu/event/artists_scientists_pollinator_health.ics"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to Outlook"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                       to Outlook
+                    </span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          
+          
+          <div
+            className="views-row"
+          >
+            <div
+              className="event-node node test item"
+            >
+              <div
+                className="events"
+              >
+                <div
+                  className="field title"
+                >
+                  <h3>
+                    <a
+                      href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      Work Party at Dilmun Hill Student Farm
+                    </a>
+                  </h3>
+                </div>
+                <h4
+                  className="meta location"
+                >
+                  Dilmun Hill Student Farm (Cornell AES)
+                </h4>
+                <div>
+                  <h4
+                    className="meta date"
+                  >
+                    <span
+                      className="fulldate"
+                    >
+                      4:00 pm
+                    </span>
+                  </h4>
+                  <h4
+                    className="meta type"
+                  >
+                    <span
+                      className="fa"
+                    />
+                    Special Event
+                  </h4>
+                </div>
+                <div
+                  className="group-image"
+                >
+                  <img
+                    alt="Work Party at Dilmun Hill Student Farm"
+                    height="150"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1563200599-6f03830c499d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80"
+                  />
+                </div>
+                <div
+                  className="summary"
+                >
+                  <p
+                    className="description"
+                  >
+                    Wednesdays, 4-7 pm
+Sundays, 2-5 pm
+at Dilmun Hill Student Farm
+
+Depending on the season, we will be installing beds, sowing, planting, weeding or harvesting. Experience the latest in sustainable agriculture, join the Dilmun community and go home with…
+                    <a
+                      className="read-more more"
+                      href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                       read more
+                      <span
+                        className="visually-hidden"
+                      >
+                         about 
+                        Work Party at Dilmun Hill Student Farm
+                      </span>
+                    </a>
+                  </p>
+                </div>
+                <span
+                  className="event-subscribe"
+                >
+                  add to calendar 
+                  <a
+                    className="fa fa-google google"
+                    href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190821%2F20191030&details=Wednesdays%2C%204-7%20pm%3Cbr%20%2F%3ESundays%2C%202-5%20pm%3Cbr%20%2F%3Eat%20Dilmun%20Hill%20Student%20Farm%3Cbr%20%2F%3E%3Cbr%20%2F%3EDepending%20on%20the%20season%2C%20we%20will%20be%20installing%20beds%2C%20sowing%2C%20planting%2C%20weeding%20or%20harvesting.%20Experience%20the%20latest%20in%20sustainable%20agriculture%2C%20join%20the%20Dilmun%20community%20and%20go%20home%20with%20delicious%2C%20fresh%20produce.%20Wear%20closed%20toe%20shoes%20and%20dress%20for%20the%20weather.%20No%20RSVP%20necessary%20-%20just%20come%20and%20join%20us.&location=&sprop=website%3Aevents.cornell.edu&text=Work%20Party%20at%20Dilmun%20Hill%20Student%20Farm"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to Google Calendar"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Work Party at Dilmun Hill Student Farm
+                       to Google Calendar
+                    </span>
+                  </a>
+                   
+                  <a
+                    className="fa fa-calendar apple"
+                    href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm.ics"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to iCal"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Work Party at Dilmun Hill Student Farm
+                       to iCal
+                    </span>
+                  </a>
+                  <a
+                    className="fa fa-clock-o microsoft"
+                    href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm.ics"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to Outlook"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Work Party at Dilmun Hill Student Farm
+                       to Outlook
+                    </span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          
+          <h4
+            className="day-header"
+          >
+            <span
+              className="fa fa-calendar-o"
+            />
+            8/24/2019
+          </h4>
+          <div
+            className="views-row"
+          >
+            <div
+              className="event-node node test item"
+            >
+              <div
+                className="events"
+              >
+                <div
+                  className="field title"
+                >
+                  <h3>
+                    <a
+                      href="http://events.cornell.edu/event/saturday_garden_tours_6546"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      Saturday Garden Tours
+                    </a>
+                  </h3>
+                </div>
+                <h4
+                  className="meta location"
+                >
+                  Brian C. Nevin Welcome Center
+                </h4>
+                <div>
+                  <h4
+                    className="meta date"
+                  >
+                    <span
+                      className="fulldate"
+                    >
+                      11:00 am
+                    </span>
+                  </h4>
+                  <h4
+                    className="meta type"
+                  >
+                    <span
+                      className="fa"
+                    />
+                    Tour
+                  </h4>
+                </div>
+                <div
+                  className="group-image"
+                >
+                  <img
+                    alt="Saturday Garden Tours"
+                    height="150"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1568214697537-ace27ffd6cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                  />
+                </div>
+                <div
+                  className="summary"
+                >
+                  <p
+                    className="description"
+                  >
+                    Take a relaxing stroll with a Garden Guide through the gardens around the Nevin Welcome Center and discover the beauty and diversity of our cultivated plant collections. Visit the Robison Herb Garden, Young Flower Garden, Bowers Rhododendron Collecti…
+                    <a
+                      className="read-more more"
+                      href="http://events.cornell.edu/event/saturday_garden_tours_6546"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                       read more
+                      <span
+                        className="visually-hidden"
+                      >
+                         about 
+                        Saturday Garden Tours
+                      </span>
+                    </a>
+                  </p>
+                </div>
+                <span
+                  className="event-subscribe"
+                >
+                  add to calendar 
+                  <a
+                    className="fa fa-google google"
+                    href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190824%2F20190928&details=Take%20a%20relaxing%20stroll%20with%20a%20Garden%20Guide%20through%20the%20gardens%20around%20the%20Nevin%20Welcome%20Center%20and%20discover%20the%20beauty%20and%20diversity%20of%20our%20cultivated%20plant%20collections.%20Visit%20the%20Robison%20Herb%20Garden%2C%20Young%20Flower%20Garden%2C%20Bowers%20Rhododendron%20Collection%2C%20Shady%20Groundcover%20Collection%2C%20tropical%20container%20display%2C%20and%20more.%20Each%20tour%20will%20be%20a%20unique%20experience%2C%20as%20we%20observe%20the%20gardens%E2%80%99%20progression%20throughout%20the%20growing%20season.%20Tours%20are%20offered%20every%20Saturday%20at%2011%20a.m.%20and%204%20p.m.%2C%20June%2015%20through%20September%2028.%3Cbr%20%2F%3E%3Cbr%20%2F%3EFee%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%245-10%20suggested%20donation%3Cbr%20%2F%3E%3Cbr%20%2F%3EInstructors%3A%20%20%20%20%20%20%20%20Volunteer%20Garden%20Guides%20%3Cbr%20%2F%3E%3Cbr%20%2F%3ELocation%3A%20%20%20%20%20%20%20%20%20%20%20%20%20Meet%20at%20the%20Nevin%20Welcome%20Center&location=&sprop=website%3Aevents.cornell.edu&text=Saturday%20Garden%20Tours"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to Google Calendar"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Saturday Garden Tours
+                       to Google Calendar
+                    </span>
+                  </a>
+                   
+                  <a
+                    className="fa fa-calendar apple"
+                    href="http://events.cornell.edu/event/saturday_garden_tours_6546.ics"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to iCal"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Saturday Garden Tours
+                       to iCal
+                    </span>
+                  </a>
+                  <a
+                    className="fa fa-clock-o microsoft"
+                    href="http://events.cornell.edu/event/saturday_garden_tours_6546.ics"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to Outlook"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Saturday Garden Tours
+                       to Outlook
+                    </span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3
+            className="month-header"
+          >
+            September 2019
+          </h3>
+          <h4
+            className="day-header"
+          >
+            <span
+              className="fa fa-calendar-o"
+            />
+            9/05/2019
+          </h4>
+          <div
+            className="views-row"
+          >
+            <div
+              className="event-node node test item"
+            >
+              <div
+                className="events"
+              >
+                <div
+                  className="field title"
+                >
+                  <h3>
+                    <a
+                      href="http://events.cornell.edu/event/honeyland"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      Honeyland
+                    </a>
+                  </h3>
+                </div>
+                <h4
+                  className="meta location"
+                >
+                  Willard Straight Theatre
+                </h4>
+                <div>
+                  <h4
+                    className="meta date"
+                  >
+                    <span
+                      className="fulldate"
+                    >
+                      7:00 pm
+                    </span>
+                  </h4>
+                  <h4
+                    className="meta type"
+                  >
+                    <span
+                      className="fa"
+                    />
+                    
+                  </h4>
+                </div>
+                <div
+                  className="group-image"
+                >
+                  <img
+                    alt="Honeyland"
+                    height="150"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1554230513-961cc6696a80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                  />
+                </div>
+                <div
+                  className="summary"
+                >
+                  <p
+                    className="description"
+                  >
+                    Hatidze lives with her ailing mother in the mountains of Macedonia, making a living cultivating honey using ancient beekeeping traditions. When an unruly family moves in next door, what at first seems like a balm for her solitude becomes a source of …
+                    <a
+                      className="read-more more"
+                      href="http://events.cornell.edu/event/honeyland"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                       read more
+                      <span
+                        className="visually-hidden"
+                      >
+                         about 
+                        Honeyland
+                      </span>
+                    </a>
+                  </p>
+                </div>
+                <span
+                  className="event-subscribe"
+                >
+                  add to calendar 
+                  <a
+                    className="fa fa-google google"
+                    href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190905%2F20190908&details=Hatidze%20lives%20with%20her%20ailing%20mother%20in%20the%20mountains%20of%20Macedonia%2C%20making%20a%20living%20cultivating%20honey%20using%20ancient%20beekeeping%20traditions.%20When%20an%20unruly%20family%20moves%20in%20next%20door%2C%20what%20at%20first%20seems%20like%20a%20balm%20for%20her%20solitude%20becomes%20a%20source%20of%20tension%20as%20they%2C%20too%2C%20want%20to%20practice%20beekeeping%2C%20while%20disregarding%20her%20advice.%22Honeyland%20is%20an%20unforgettable%20v%C2%8Erit%C2%8E%20character%20study%20and%20an%20intimate%20look%20at%20an%20endangered%20tradition.%22%20(The%20Hollywood%20Reporter)%22Far%20from%20a%20scolding%2C%20rub-your-nose-in-it%20depiction%20of%20environmental%20havoc%2C%20this%20is%20a%20tender%20story%20about%20the%20chaos%20of%20abandoning%20the%20common%20good.%22%20(IndieWire)The%20most%20awarded%20film%20at%20the%202019%20Sundance%20Film%20Festival.website%3A%20honeylandfilm.com&location=Willard%20Straight%20Theatre&sprop=website%3Aevents.cornell.edu&text=Honeyland"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to Google Calendar"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Honeyland
+                       to Google Calendar
+                    </span>
+                  </a>
+                   
+                  <a
+                    className="fa fa-calendar apple"
+                    href="http://events.cornell.edu/event/honeyland.ics"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to iCal"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Honeyland
+                       to iCal
+                    </span>
+                  </a>
+                  <a
+                    className="fa fa-clock-o microsoft"
+                    href="http://events.cornell.edu/event/honeyland.ics"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    title="Save to Outlook"
+                  >
+                    <span
+                      className="sr-only"
+                    >
+                      Add 
+                      Honeyland
+                       to Outlook
+                    </span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Standard Enabled 2`] = `
+<section
+  className="standard compact"
+  title="Events List"
+>
+  <div
+    className="main-body"
+  >
+    <div
+      className="events-listing  compact test wrapper"
+    >
+      
+      <div
+        className="events-list view-content test lists"
+      >
+        <div
+          className="views-row test item"
+        >
+          
+          <div
+            className="event-node node"
+          >
+            <div
+              className="events"
+            >
+              <h3>
+                <a
+                  href="http://events.cornell.edu/event/artists_scientists_pollinator_health"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                </a>
+              </h3>
+              <h4
+                className="meta location"
+              >
+                Mann Library
+              </h4>
+              <h4
+                className="meta date"
+              >
+                <span
+                  className="fulldate"
+                >
+                  Aug 21
+                </span>
+              </h4>
+              <div
+                className="summary"
+              >
+                <p
+                  className="description"
+                >
+                  
+                  
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div
+          className="views-row test item"
+        >
+          
+          <div
+            className="event-node node"
+          >
+            <div
+              className="events"
+            >
+              <h3>
+                <a
+                  href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  Work Party at Dilmun Hill Student Farm
+                </a>
+              </h3>
+              <h4
+                className="meta location"
+              >
+                Dilmun Hill Student Farm (Cornell AES)
+              </h4>
+              <h4
+                className="meta date"
+              >
+                <span
+                  className="fulldate"
+                >
+                  Aug 21
+                </span>
+              </h4>
+              <div
+                className="summary"
+              >
+                <p
+                  className="description"
+                >
+                  
+                  
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div
+          className="views-row test item"
+        >
+          
+          <div
+            className="event-node node"
+          >
+            <div
+              className="events"
+            >
+              <h3>
+                <a
+                  href="http://events.cornell.edu/event/saturday_garden_tours_6546"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  Saturday Garden Tours
+                </a>
+              </h3>
+              <h4
+                className="meta location"
+              >
+                Brian C. Nevin Welcome Center
+              </h4>
+              <h4
+                className="meta date"
+              >
+                <span
+                  className="fulldate"
+                >
+                  Aug 24
+                </span>
+              </h4>
+              <div
+                className="summary"
+              >
+                <p
+                  className="description"
+                >
+                  
+                  
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div
+          className="views-row test item"
+        >
+          
+          <div
+            className="event-node node"
+          >
+            <div
+              className="events"
+            >
+              <h3>
+                <a
+                  href="http://events.cornell.edu/event/honeyland"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  Honeyland
+                </a>
+              </h3>
+              <h4
+                className="meta location"
+              >
+                Willard Straight Theatre
+              </h4>
+              <h4
+                className="meta date"
+              >
+                <span
+                  className="fulldate"
+                >
+                  Sep 5
+                </span>
+              </h4>
+              <div
+                className="summary"
+              >
+                <p
+                  className="description"
+                >
+                  
+                  
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`odernStandard Enabled 1`] = `
+<section
+  className="events-modern-standard modern"
+  title="Events List"
+>
+  <div
+    className="main-body"
+  >
+    <div
+      className="cwd-component cwd-card-grid three-card singles events-listing  test wrapper"
+    >
+      <div
+        className="events-filters-wrap"
+      >
+        <h3
+          className="hidden"
+        >
+          Show:
+        </h3>
+        <ul
+          className="events-filters"
+        >
+          <li>
+            <button
+              className="filter-btn active"
+              id="filterAll"
+              onClick={[Function]}
+              type="button"
+            >
+              All Events
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter36389"
+              onClick={[Function]}
+              type="button"
+            >
+              Exhibition
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4270"
+              onClick={[Function]}
+              type="button"
+            >
+              Special Event
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4272"
+              onClick={[Function]}
+              type="button"
+            >
+              Tour
+            </button>
+          </li>
+          <li>
+            <button
+              className="filter-btn "
+              id="filter4258"
+              onClick={[Function]}
+              type="button"
+            >
+              Film
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="events-list view-content test lists"
+      >
+        <div
+          className="card event-node test item"
+        >
+          <div
+            className="events"
+          >
+            <a
+              className="group-link-wrapper field-group-link"
+              href="http://events.cornell.edu/event/artists_scientists_pollinator_health"
+            >
+              <time
+                dateTime="8:00 am"
+                title="August 21"
+              >
+                <span
+                  className="month"
+                >
+                  Aug
+                </span>
+                <span
+                  className="day"
+                >
+                  21
+                </span>
+              </time>
+              <div
+                className="field title"
+              >
+                <h3>
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                </h3>
+              </div>
+              <div
+                className="field meta"
+              >
+                <p>
+                  8:00 am
+                  , Mann Library
+                  <span
+                    className="inline-events-type"
+                  >
+                    Exhibition
+                  </span>
+                </p>
+              </div>
+              <div
+                className="field field-name-summary summary"
+              >
+                <p>
+                  <img
+                    alt="PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health"
+                    height="150"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1559744775-7a6bfcc4b824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                  />
+                  Threats to pollinator health are intense and varied, from habitat loss and climate change to diseases and pesticides. A summer exhibit in the  Mann Gallery, PolliNation: Artists Crossing Borders with Scientists to Explore the Value of Pollinator Heal… read more
+                </p>
+              </div>
+            </a>
+            <span
+              className="event-subscribe"
+            >
+              add to calendar 
+              <a
+                className="fa fa-google google"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190821%2F20190930&details=Threats%20to%20pollinator%20health%20are%20intense%20and%20varied%2C%20from%20habitat%20loss%20and%20climate%20change%20to%20diseases%20and%20pesticides.%20A%20summer%20exhibit%20in%20the%20%20Mann%20Gallery%2C%20PolliNation%3A%20Artists%20Crossing%20Borders%20with%20Scientists%20to%20Explore%20the%20Value%20of%20Pollinator%20Health%20showcases%20the%20results%20of%20a%20multi-year%20collaboration%20between%20Cornell%20entomologists%2C%20%20U.K.%20based%20scientists%20and%20Welsh%20artists%20who%2C%20crossing%20national%20and%20disciplinary%20boundaries%2C%20work%20to%20reveal%20and%20celebrate%20the%20beauty%20and%20importance%20of%20pollinators%2C%20and%20how%20their%20fate%20is%20linked%20to%20our%20planet%2C%20and%20to%20our%20own.%3Cbr%20%2F%3E%3Cbr%20%2F%3EThis%20exhibit%20is%20a%20collaboration%20between%20Mann%20Library%2C%20the%20Cornell%20Department%20of%20Entomology%20and%20the%20University%20of%20Wales%2C%20Trinity%20St.%20David.%20%20%3Cbr%20%2F%3E%3Cbr%20%2F%3EOn%20Friday%2C%20June%207%2C%20we%20will%20celebrate%20the%20exhibit%20with%20a%20special%20lecture%20%20by%20Cornell%20entomologist%20Scott%20McArt%2C%20a%20reception%20in%20the%20Mann%20Gallery%2C%20and%20a%20garden%20tour%20%20introducing%20participants%20to%20Cornell%E2%80%99s%20new%20%E2%80%9CBotanic%20Buzzline%E2%80%9D%20pollinator%20walkway%2C%20in%20the%20Cornell%20Botanic%20Gardens.%20All%20events%20are%20free%20and%20open%20to%20the%20public.%20%20%20%3Cbr%20%2F%3E%3Cbr%20%2F%3EFor%20more%20information%20visit%20us%20at%20mannlib.cornell.edu%2C%20find%20us%20at%20facebook.com%2Fmannlibrary%2C%20or%20call%20(607)%202550-3296&location=&sprop=website%3Aevents.cornell.edu&text=PolliNation%3A%20Artists%20%26%20Scientists%20Crossing%20Borders%20to%20Explore%20the%20Value%20of%20Pollinator%20Health"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Google Calendar"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                   to Google Calendar
+                </span>
+              </a>
+               
+              <a
+                className="fa fa-calendar apple"
+                href="http://events.cornell.edu/event/artists_scientists_pollinator_health.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to iCal"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                   to iCal
+                </span>
+              </a>
+              <a
+                className="fa fa-clock-o microsoft"
+                href="http://events.cornell.edu/event/artists_scientists_pollinator_health.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Outlook"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+                   to Outlook
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          className="card event-node test item"
+        >
+          <div
+            className="events"
+          >
+            <a
+              className="group-link-wrapper field-group-link"
+              href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm"
+            >
+              <time
+                dateTime="4:00 pm"
+                title="August 21"
+              >
+                <span
+                  className="month"
+                >
+                  Aug
+                </span>
+                <span
+                  className="day"
+                >
+                  21
+                </span>
+              </time>
+              <div
+                className="field title"
+              >
+                <h3>
+                  Work Party at Dilmun Hill Student Farm
+                </h3>
+              </div>
+              <div
+                className="field meta"
+              >
+                <p>
+                  4:00 pm
+                  , Dilmun Hill Student Farm (Cornell AES)
+                  <span
+                    className="inline-events-type"
+                  >
+                    Special Event
+                  </span>
+                </p>
+              </div>
+              <div
+                className="field field-name-summary summary"
+              >
+                <p>
+                  <img
+                    alt="Work Party at Dilmun Hill Student Farm"
+                    height="150"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1563200599-6f03830c499d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80"
+                  />
+                  Wednesdays, 4-7 pm
+Sundays, 2-5 pm
+at Dilmun Hill Student Farm
+
+Depending on the season, we will be installing beds, sowing, planting, weeding or harvesting. Experience the latest in sustainable agriculture, join the Dilmun community and go home with… read more
+                </p>
+              </div>
+            </a>
+            <span
+              className="event-subscribe"
+            >
+              add to calendar 
+              <a
+                className="fa fa-google google"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190821%2F20191030&details=Wednesdays%2C%204-7%20pm%3Cbr%20%2F%3ESundays%2C%202-5%20pm%3Cbr%20%2F%3Eat%20Dilmun%20Hill%20Student%20Farm%3Cbr%20%2F%3E%3Cbr%20%2F%3EDepending%20on%20the%20season%2C%20we%20will%20be%20installing%20beds%2C%20sowing%2C%20planting%2C%20weeding%20or%20harvesting.%20Experience%20the%20latest%20in%20sustainable%20agriculture%2C%20join%20the%20Dilmun%20community%20and%20go%20home%20with%20delicious%2C%20fresh%20produce.%20Wear%20closed%20toe%20shoes%20and%20dress%20for%20the%20weather.%20No%20RSVP%20necessary%20-%20just%20come%20and%20join%20us.&location=&sprop=website%3Aevents.cornell.edu&text=Work%20Party%20at%20Dilmun%20Hill%20Student%20Farm"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Google Calendar"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Work Party at Dilmun Hill Student Farm
+                   to Google Calendar
+                </span>
+              </a>
+               
+              <a
+                className="fa fa-calendar apple"
+                href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to iCal"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Work Party at Dilmun Hill Student Farm
+                   to iCal
+                </span>
+              </a>
+              <a
+                className="fa fa-clock-o microsoft"
+                href="http://events.cornell.edu/event/work_party_at_dilmun_hill_student_farm.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Outlook"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Work Party at Dilmun Hill Student Farm
+                   to Outlook
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          className="card event-node test item"
+        >
+          <div
+            className="events"
+          >
+            <a
+              className="group-link-wrapper field-group-link"
+              href="http://events.cornell.edu/event/saturday_garden_tours_6546"
+            >
+              <time
+                dateTime="11:00 am"
+                title="August 24"
+              >
+                <span
+                  className="month"
+                >
+                  Aug
+                </span>
+                <span
+                  className="day"
+                >
+                  24
+                </span>
+              </time>
+              <div
+                className="field title"
+              >
+                <h3>
+                  Saturday Garden Tours
+                </h3>
+              </div>
+              <div
+                className="field meta"
+              >
+                <p>
+                  11:00 am
+                  , Brian C. Nevin Welcome Center
+                  <span
+                    className="inline-events-type"
+                  >
+                    Tour
+                  </span>
+                </p>
+              </div>
+              <div
+                className="field field-name-summary summary"
+              >
+                <p>
+                  <img
+                    alt="Saturday Garden Tours"
+                    height="150"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1568214697537-ace27ffd6cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                  />
+                  Take a relaxing stroll with a Garden Guide through the gardens around the Nevin Welcome Center and discover the beauty and diversity of our cultivated plant collections. Visit the Robison Herb Garden, Young Flower Garden, Bowers Rhododendron Collecti… read more
+                </p>
+              </div>
+            </a>
+            <span
+              className="event-subscribe"
+            >
+              add to calendar 
+              <a
+                className="fa fa-google google"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190824%2F20190928&details=Take%20a%20relaxing%20stroll%20with%20a%20Garden%20Guide%20through%20the%20gardens%20around%20the%20Nevin%20Welcome%20Center%20and%20discover%20the%20beauty%20and%20diversity%20of%20our%20cultivated%20plant%20collections.%20Visit%20the%20Robison%20Herb%20Garden%2C%20Young%20Flower%20Garden%2C%20Bowers%20Rhododendron%20Collection%2C%20Shady%20Groundcover%20Collection%2C%20tropical%20container%20display%2C%20and%20more.%20Each%20tour%20will%20be%20a%20unique%20experience%2C%20as%20we%20observe%20the%20gardens%E2%80%99%20progression%20throughout%20the%20growing%20season.%20Tours%20are%20offered%20every%20Saturday%20at%2011%20a.m.%20and%204%20p.m.%2C%20June%2015%20through%20September%2028.%3Cbr%20%2F%3E%3Cbr%20%2F%3EFee%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%245-10%20suggested%20donation%3Cbr%20%2F%3E%3Cbr%20%2F%3EInstructors%3A%20%20%20%20%20%20%20%20Volunteer%20Garden%20Guides%20%3Cbr%20%2F%3E%3Cbr%20%2F%3ELocation%3A%20%20%20%20%20%20%20%20%20%20%20%20%20Meet%20at%20the%20Nevin%20Welcome%20Center&location=&sprop=website%3Aevents.cornell.edu&text=Saturday%20Garden%20Tours"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Google Calendar"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Saturday Garden Tours
+                   to Google Calendar
+                </span>
+              </a>
+               
+              <a
+                className="fa fa-calendar apple"
+                href="http://events.cornell.edu/event/saturday_garden_tours_6546.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to iCal"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Saturday Garden Tours
+                   to iCal
+                </span>
+              </a>
+              <a
+                className="fa fa-clock-o microsoft"
+                href="http://events.cornell.edu/event/saturday_garden_tours_6546.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Outlook"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Saturday Garden Tours
+                   to Outlook
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          className="card event-node test item"
+        >
+          <div
+            className="events"
+          >
+            <a
+              className="group-link-wrapper field-group-link"
+              href="http://events.cornell.edu/event/honeyland"
+            >
+              <time
+                dateTime="7:00 pm"
+                title="September 5"
+              >
+                <span
+                  className="month"
+                >
+                  Sep
+                </span>
+                <span
+                  className="day"
+                >
+                  5
+                </span>
+              </time>
+              <div
+                className="field title"
+              >
+                <h3>
+                  Honeyland
+                </h3>
+              </div>
+              <div
+                className="field meta"
+              >
+                <p>
+                  7:00 pm
+                  , Willard Straight Theatre
+                  <span
+                    className="inline-events-type"
+                  >
+                    Film
+                  </span>
+                </p>
+              </div>
+              <div
+                className="field field-name-summary summary"
+              >
+                <p>
+                  <img
+                    alt="Honeyland"
+                    height="150"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1554230513-961cc6696a80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&h=340&q=80"
+                  />
+                  Hatidze lives with her ailing mother in the mountains of Macedonia, making a living cultivating honey using ancient beekeeping traditions. When an unruly family moves in next door, what at first seems like a balm for her solitude becomes a source of … read more
+                </p>
+              </div>
+            </a>
+            <span
+              className="event-subscribe"
+            >
+              add to calendar 
+              <a
+                className="fa fa-google google"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190905%2F20190908&details=Hatidze%20lives%20with%20her%20ailing%20mother%20in%20the%20mountains%20of%20Macedonia%2C%20making%20a%20living%20cultivating%20honey%20using%20ancient%20beekeeping%20traditions.%20When%20an%20unruly%20family%20moves%20in%20next%20door%2C%20what%20at%20first%20seems%20like%20a%20balm%20for%20her%20solitude%20becomes%20a%20source%20of%20tension%20as%20they%2C%20too%2C%20want%20to%20practice%20beekeeping%2C%20while%20disregarding%20her%20advice.%22Honeyland%20is%20an%20unforgettable%20v%C2%8Erit%C2%8E%20character%20study%20and%20an%20intimate%20look%20at%20an%20endangered%20tradition.%22%20(The%20Hollywood%20Reporter)%22Far%20from%20a%20scolding%2C%20rub-your-nose-in-it%20depiction%20of%20environmental%20havoc%2C%20this%20is%20a%20tender%20story%20about%20the%20chaos%20of%20abandoning%20the%20common%20good.%22%20(IndieWire)The%20most%20awarded%20film%20at%20the%202019%20Sundance%20Film%20Festival.website%3A%20honeylandfilm.com&location=Willard%20Straight%20Theatre&sprop=website%3Aevents.cornell.edu&text=Honeyland"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Google Calendar"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Honeyland
+                   to Google Calendar
+                </span>
+              </a>
+               
+              <a
+                className="fa fa-calendar apple"
+                href="http://events.cornell.edu/event/honeyland.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to iCal"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Honeyland
+                   to iCal
+                </span>
+              </a>
+              <a
+                className="fa fa-clock-o microsoft"
+                href="http://events.cornell.edu/event/honeyland.ics"
+                rel="noreferrer noopener"
+                target="_blank"
+                title="Save to Outlook"
+              >
+                <span
+                  className="sr-only"
+                >
+                  Add 
+                  Honeyland
+                   to Outlook
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

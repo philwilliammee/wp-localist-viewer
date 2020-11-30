@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css" integrity="sha256-cCazLItaM+Zz5UEzu9HNzlgWhXlvknCzjdE45LBeTns=" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cu-communityapps.github.io/CD_cwd_events/src/app/css/main.css">
+    <title>Localist Viewer|Demo</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h1><a href="https://philwilliammee.github.io/localist-viewer/">Localist Viewer</a></h1>
+        <p><a href="https://github.com/philwilliammee/localist-viewer">Github</a> | <a href="https://www.npmjs.com/package/localist-viewer">Npm</a></p>
+        <div class='row'>
+            <div id="feature"
+                class="events-listing cwd-events-style"
+                data-target="feature"
+                data-depts="0"
+                data-entries="3"
+                data-format="modern_compact"
+                data-group="0"
+                data-keyword=""
+                data-heading="Demo"
+                data-calendarurl="./3eventTestData.json"
+                data-apikey=""
+                data-daysahead="2"
+                data-hidedescription="false"
+                data-truncatedescription="200"
+                data-hideimages="false"
+                data-hideaddcal="true"
+                data-hidepagination="false"
+                data-filterby="type"
+                data-wrapperclass="cwd-card-grid three-card"
+                data-listclass="cards"
+                data-itemclass="card"
+                >
+            </div>
+        </div>
+        <div class='row'>
+            <p>
+                There are thousands of other configuration options see the <a href="https://philwilliammee.github.io/localist-viewer/#Deployment">docs</a>.
+            </p>
+        </div>
+    </div>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/localist-viewer@latest/build/index.js"></script> -->
+<script src="../build/index.js"></script>
+<script>
+    const elem = document.getElementById('feature');
+    const data = {
+        ...elem.dataset
+    };
+    window.localistViewer(data);
+</script>
+
+</html>

@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Event filters 1`] = `
+<div
+  className="events-filters-wrap"
+>
+  <h3
+    className="hidden"
+  >
+    Show:
+  </h3>
+  <ul
+    className="events-filters"
+  >
+    <li>
+      <button
+        className="filter-btn active"
+        id="filterAll"
+        onClick={[Function]}
+        type="button"
+      >
+        All Events
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4205"
+        onClick={[Function]}
+        type="button"
+      >
+        Cornell University Library
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4216"
+        onClick={[Function]}
+        type="button"
+      >
+        Entomology
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4228"
+        onClick={[Function]}
+        type="button"
+      >
+        Mann Library
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4468"
+        onClick={[Function]}
+        type="button"
+      >
+        College of Agriculture and Life Sciences
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4204"
+        onClick={[Function]}
+        type="button"
+      >
+        Cornell University Agricultural Experiment Station
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter9901"
+        onClick={[Function]}
+        type="button"
+      >
+        Sustainability
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4820"
+        onClick={[Function]}
+        type="button"
+      >
+        Cornell Botanic Gardens
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4189"
+        onClick={[Function]}
+        type="button"
+      >
+        CALS Communications
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4199"
+        onClick={[Function]}
+        type="button"
+      >
+        Cornell Cinema
+      </button>
+    </li>
+    <li>
+      <button
+        className="filter-btn "
+        id="filter4240"
+        onClick={[Function]}
+        type="button"
+      >
+        Mario Einaudi Center for International Studies
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Event filters Buttons 1`] = `
+<button
+  className="filter-btn "
+  id="thisid"
+  onClick={[MockFunction]}
+  type="button"
+>
+  test
+</button>
+`;
+
+exports[`Event filters Buttons 2`] = `
+<button
+  className="filter-btn "
+  id="thisid"
+  onClick={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  type="button"
+>
+  test
+</button>
+`;

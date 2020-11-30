@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddCal returns calendar links 1`] = `
+<span
+  className="event-subscribe"
+>
+  add to calendar 
+  <a
+    className="fa fa-google google"
+    href="https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20190821%2F20190930&details=Threats%20to%20pollinator%20health%20are%20intense%20and%20varied%2C%20from%20habitat%20loss%20and%20climate%20change%20to%20diseases%20and%20pesticides.%20A%20summer%20exhibit%20in%20the%20%20Mann%20Gallery%2C%20PolliNation%3A%20Artists%20Crossing%20Borders%20with%20Scientists%20to%20Explore%20the%20Value%20of%20Pollinator%20Health%20showcases%20the%20results%20of%20a%20multi-year%20collaboration%20between%20Cornell%20entomologists%2C%20%20U.K.%20based%20scientists%20and%20Welsh%20artists%20who%2C%20crossing%20national%20and%20disciplinary%20boundaries%2C%20work%20to%20reveal%20and%20celebrate%20the%20beauty%20and%20importance%20of%20pollinators%2C%20and%20how%20their%20fate%20is%20linked%20to%20our%20planet%2C%20and%20to%20our%20own.%3Cbr%20%2F%3E%3Cbr%20%2F%3EThis%20exhibit%20is%20a%20collaboration%20between%20Mann%20Library%2C%20the%20Cornell%20Department%20of%20Entomology%20and%20the%20University%20of%20Wales%2C%20Trinity%20St.%20David.%20%20%3Cbr%20%2F%3E%3Cbr%20%2F%3EOn%20Friday%2C%20June%207%2C%20we%20will%20celebrate%20the%20exhibit%20with%20a%20special%20lecture%20%20by%20Cornell%20entomologist%20Scott%20McArt%2C%20a%20reception%20in%20the%20Mann%20Gallery%2C%20and%20a%20garden%20tour%20%20introducing%20participants%20to%20Cornell%E2%80%99s%20new%20%E2%80%9CBotanic%20Buzzline%E2%80%9D%20pollinator%20walkway%2C%20in%20the%20Cornell%20Botanic%20Gardens.%20All%20events%20are%20free%20and%20open%20to%20the%20public.%20%20%20%3Cbr%20%2F%3E%3Cbr%20%2F%3EFor%20more%20information%20visit%20us%20at%20mannlib.cornell.edu%2C%20find%20us%20at%20facebook.com%2Fmannlibrary%2C%20or%20call%20(607)%202550-3296&location=&sprop=website%3Aevents.cornell.edu&text=PolliNation%3A%20Artists%20%26%20Scientists%20Crossing%20Borders%20to%20Explore%20the%20Value%20of%20Pollinator%20Health"
+    rel="noreferrer noopener"
+    target="_blank"
+    title="Save to Google Calendar"
+  >
+    <span
+      className="sr-only"
+    >
+      Add 
+      PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+       to Google Calendar
+    </span>
+  </a>
+   
+  <a
+    className="fa fa-calendar apple"
+    href="http://events.cornell.edu/event/artists_scientists_pollinator_health.ics"
+    rel="noreferrer noopener"
+    target="_blank"
+    title="Save to iCal"
+  >
+    <span
+      className="sr-only"
+    >
+      Add 
+      PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+       to iCal
+    </span>
+  </a>
+  <a
+    className="fa fa-clock-o microsoft"
+    href="http://events.cornell.edu/event/artists_scientists_pollinator_health.ics"
+    rel="noreferrer noopener"
+    target="_blank"
+    title="Save to Outlook"
+  >
+    <span
+      className="sr-only"
+    >
+      Add 
+      PolliNation: Artists & Scientists Crossing Borders to Explore the Value of Pollinator Health
+       to Outlook
+    </span>
+  </a>
+</span>
+`;
