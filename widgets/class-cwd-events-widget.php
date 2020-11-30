@@ -140,6 +140,7 @@ class Cwd_Events_Widget extends WP_Widget {
 				'standard'        => __( 'standard', 'text_domain' ),
 				'compact'         => __( 'compact', 'text_domain' ),
 				'inline_compact'  => __( 'inline_compact', 'text_domain' ),
+				'calendar'        => __( 'calendar', 'text_domain' ),
 			);
 			foreach ( $options as $key => $name ) {
 				echo '<option value="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '" ' . selected( $format, $key, false ) . '>' . esc_attr( $name ) . '</option>';
