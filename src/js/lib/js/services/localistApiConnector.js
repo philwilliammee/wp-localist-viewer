@@ -93,8 +93,8 @@ export default props => {
   //   params.days = daysahead;
   // }
 
-  console.log(start);
-  console.log(end);
+  // console.log(start);
+  // console.log(end);
   const body = {
     query: GET_EVENTS,
     variables: {
@@ -107,7 +107,7 @@ export default props => {
     }
   };
 
-  console.log(body.variables);
+  // console.log(body.variables);
 
   const options = {
     headers: {

@@ -81,8 +81,8 @@ EventImg.defaultProps = {
 
 const EventThumbnail = props => {
     const { hideimages, photoUrl, title, photoCrop } = props;
-    if (isHidden(hideimages)) {
-        return '';
+    if (isHidden(hideimages) || !photoUrl) {
+        return <></>;
     }
     return (
         <div className='group-image'>
@@ -98,7 +98,7 @@ const EventThumbnail = props => {
 }
 
 EventThumbnail.propTypes = {
-    photoUrl: PropTypes.string.isRequired,
+    photoUrl: PropTypes.string,
     title: PropTypes.string.isRequired,
     hideimages: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     photoCrop: PropTypes.oneOf(['huge', 'big', 'big_square']),

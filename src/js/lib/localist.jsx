@@ -37,6 +37,9 @@ const Localist = props => {
         if (props.format === 'calendar') {
             start = moment().subtract(1, 'month').startOf('month').format('YYYY-MM-DD hh:mm');
             end = moment().add(1, 'month').endOf('month').format('YYYY-MM-DD hh:mm');
+        } else {
+            start = moment().subtract(10, 'days').format('YYYY-MM-DD hh:mm');
+            end = moment().add(12, 'month').endOf('month').format('YYYY-MM-DD hh:mm');
         }
         setLoading(true)
         // const itemClassArray = props.itemclass.split(' ').concat(['event-node']);
