@@ -1,8 +1,8 @@
+// @ts-nocheck
 import ReactDOM from "react-dom";
 import React from "react";
 import { LocalistComponent } from "./lib";
 
-// const data = require('./config.json');
 require("babel-polyfill");
 
 /** *********************** START LOCALIST *********************************** /

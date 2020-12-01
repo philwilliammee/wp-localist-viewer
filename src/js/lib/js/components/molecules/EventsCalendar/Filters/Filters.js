@@ -20,10 +20,10 @@ const Filters = () => {
   const eventKeywordsFull = [];
   const eventGroupNamesFull = [];
   if (!events && events.length > 0) {
-    return "";
+    return <></>;
   }
 
-  events.forEach((event) => {
+  events.forEach(event => {
     if (
       moment(event.event.first_date).isBetween(
         displayedDateRange.start,
@@ -33,13 +33,13 @@ const Filters = () => {
     ) {
       // some events don't have types
       if (isNested(event, "event", "filters", "event_types")) {
-        event.event.filters.event_types.forEach((type) => {
+        event.event.filters.event_types.forEach(type => {
           eventTypesFull.push(type.name);
         });
       }
 
       if (isNested(event, "event", "keywords")) {
-        event.event.keywords.forEach((keyword) => {
+        event.event.keywords.forEach(keyword => {
           eventKeywordsFull.push(keyword);
         });
       }
@@ -55,7 +55,7 @@ const Filters = () => {
   const eventKeywords = [...new Set(eventKeywordsFull)].sort();
   const eventGroupNames = [...new Set(eventGroupNamesFull)].sort();
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const item = e.target.name;
     const isChecked = e.target.checked;
     setCheckedItems(new Map(checkedItems.set(item, isChecked)));
@@ -64,21 +64,21 @@ const Filters = () => {
 
   // Working but needs to set and get filtered events.
   const filterEvents = () => {
-    const filteredEvents = [...events].filter((event) => {
+    const filteredEvents = [...events].filter(event => {
       if (checkedItems.get(event.event.group_name)) {
         return true;
       }
 
       if (isNested(event, "event", "filters", "event_types")) {
-        const foundEventTypesName = event.event.filters.event_types.find(
-          (type) => checkedItems.get(type.name)
+        const foundEventTypesName = event.event.filters.event_types.find(type =>
+          checkedItems.get(type.name)
         );
         if (foundEventTypesName) {
           return true;
         }
       }
 
-      const foundKeyword = event.event.keywords.find((element) =>
+      const foundKeyword = event.event.keywords.find(element =>
         checkedItems.get(element)
       );
 

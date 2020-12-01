@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import EventsContext from "../../../context/EventsContext";
 import PropTypes from "prop-types";
 import {
-	getEventTypeString,
-	getEventDate,
-	getEventFullTime,
-	getEventDepartmentsString
+  getEventTypeString,
+  getEventDate,
+  getEventFullTime,
+  getEventDepartmentsString
 } from "../../../helpers/displayEvent";
 import AddCal from "../addCal";
 import { EventImg } from "../partials";
@@ -14,55 +14,60 @@ import Grid from "../../atoms/Grid";
 import "./EventStyle.scss";
 
 const EventDetails = props => {
-	let { event } = props;
-	const { events } = useContext(EventsContext);
+  let { event } = props;
+  const { events } = useContext(EventsContext);
 
-	// Get the full event details
-	event = events.find(e => {
-		// console.log(e.event.eventId, event.eventId);
-		return e.event.eventId === event.eventId;
-	}).event;
+  // Get the full event details
+  event = events.find(e => {
+    // console.log(e.event.eventId, event.eventId);
+    return e.event.eventId === event.eventId;
+  }).event;
 
-	// const deptWebsite = event.custom_fields.dept_web_site
-	// 	? event.custom_fields.dept_web_site
-	// 	: "";
+  // const deptWebsite = event.custom_fields.dept_web_site
+  // 	? event.custom_fields.dept_web_site
+  // 	: "";
 
-	const deptWebsite = "";
+  const deptWebsite = "";
 
-	const eventType = ""; //getEventTypeString(event);
-	if (!event) {
-		return <>Cant find event</>;
-	}
+  const eventType = ""; //getEventTypeString(event);
+  if (!event) {
+    return <>Cant find event</>;
+  }
 
-	//console.log(event);
+  //console.log(event);
 
-	return (
-		<section className="event-details">
-			<div className="cwd-component">
-				<div className="cwd-events-style">
-					<div className="field title">
-						<h3>{event.title}</h3>
-					</div>
-					<span>
-						{getEventDate(event)} @ {getEventFullTime(event)}
-					</span>
-					<span className="inline-events-type">
-						{event.location_name ? event.location_name : ""}
-					</span>
-					<div className="field field-name-summary summary">
-						<div>
-							<div style={{ float: "left", paddingRight: "15px" }}>
-								<EventImg
-									photoUrl={event.photoUrl}
-									title={event.title}
-									hideimages={"false"}
-									photoCrop="big"
-								/>
-							</div>
-							<span dangerouslySetInnerHTML={{ __html: event.description }} />
-						</div>
-					</div>
-					{/* <div className="cwd-more-info">
+  return (
+    <section className="event-details">
+      <div className="cwd-component">
+        <div className="cwd-events-style">
+          <div className="field title">
+            <h3>{event.title}</h3>
+          </div>
+          <span>
+            {getEventDate(event)} @ {getEventFullTime(event)}
+          </span>
+
+          {event.location ? (
+            <span className="inline-events-type">event.location</span>
+          ) : (
+            ""
+          )}
+
+          <div className="field field-name-summary summary">
+            <div>
+              <div style={{ float: "left", paddingRight: "15px" }}>
+                <EventImg
+                  photoUrl={event.photoUrl}
+                  title={event.title}
+                  hideimages={"false"}
+                  photoCrop="big"
+                />
+              </div>
+              <span dangerouslySetInnerHTML={{ __html: event.description }} />
+            </div>
+          </div>
+          {/*<div className="cwd-more-info">
+
 						<Grid container>
 							<Grid col={12}>
 								<h4>Details</h4>
@@ -145,18 +150,19 @@ const EventDetails = props => {
 					<p>
 						<a href="/#" className="link-button">
               Register link
-            </a> 
-
-						<AddCal event={event} hideaddcal="false" />
-					</p>*/}
-				</div>
-			</div>
-		</section>
-	);
+            </a>
+						*/}
+          <p>
+            <AddCal event={event} hideaddcal="false" />
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 EventDetails.propTypes = {
-	event: PropTypes.object.isRequired
+  event: PropTypes.object.isRequired
 };
 
 export default EventDetails;

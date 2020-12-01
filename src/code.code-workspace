@@ -30,6 +30,12 @@
     },
     // "terminal.integrated.fontFamily": "dejavu sans mono for powerline",
     "javascript.implicitProjectConfig.checkJs": true,
-    "cSpell.words": [],
+    "cSpell.words": [
+      "filterby",
+      "hideaddcal",
+      "hidedescription",
+      "hideimages",
+      "truncatedescription"
+    ],
   }
 }

@@ -3,9 +3,9 @@ import React, { useState, useEffect, useCallback, useContext } from 'react';
 import PropTypes from 'prop-types';
 import localistApiConnector from './js/services/localistApiConnector';
 import Heading from './js/components/organisms/heading';
-import Paginate from './js/components/organisms/paginate';
+// import Paginate from './js/components/organisms/paginate';
 import LocalistView from './js/components/organisms/localist_view';
-import EventFilters from './js/components/organisms/event_filterby';
+// import EventFilters from './js/components/organisms/event_filterby';
 import { isHidden } from './js/helpers/common';
 import EventsContext from './js/context/EventsContext'
 import moment from 'moment'
@@ -16,10 +16,12 @@ import moment from 'moment'
  * @todo implement class lists for all components.
  */
 const Localist = props => {
-    const {events, setEvents, setFilteredEvents} = useContext(EventsContext)
-    const [llPage, setLlPage] = useState({ current: props.page, size: 1, total: 1 })
-    const [currentPage, setCurrentPage] = useState(props.page)
-    const [filter, setFilter] = useState('filterAll')
+    const { events, setEvents, setFilteredEvents } = useContext(EventsContext)
+    // const [llPage, setLlPage] = useState({ current: props.page, size: 1, total: 1 })
+    // const [currentPage, setCurrentPage] = useState(props.page)
+    // const [filter, setFilter] = useState('filterAll')
+    const currentPage = props.page
+    const filter = 'filterAll'
     const [loading, setLoading] = useState(true)
     let wrapperClassArray = props.wrapperclass.split(' ');
     if (isHidden(props.hideimages)) {
@@ -32,14 +34,14 @@ const Localist = props => {
 
     const getEvents = useCallback(async () => {
         let start, end;
-        if (props.format === 'calendar'){
+        if (props.format === 'calendar') {
             start = moment().subtract(1, 'month').startOf('month').format('YYYY-MM-DD hh:mm');
-            end   = moment().add(1, 'month').endOf('month').format('YYYY-MM-DD hh:mm');
+            end = moment().add(1, 'month').endOf('month').format('YYYY-MM-DD hh:mm');
         }
         setLoading(true)
         // const itemClassArray = props.itemclass.split(' ').concat(['event-node']);
-        let res = await localistApiConnector({ ...props, page:currentPage, start, end});
-        
+        let res = await localistApiConnector({ ...props, page: currentPage, start, end });
+
         const data = res.data.data.events.nodes
         console.log(data)
         // data.events.forEach(event => {
@@ -55,15 +57,15 @@ const Localist = props => {
 
     useEffect(() => { getEvents() }, [currentPage])
 
-    function handlePageClick(data) {
-        const newPage = data.selected + 1;
-        setCurrentPage(newPage)
-    }
+    // function handlePageClick(data) {
+    //     const newPage = data.selected + 1;
+    //     setCurrentPage(newPage)
+    // }
 
-    function handleEventFilter(events, filter) {
-        setFilter(filter)
-        setEvents(events)
-    }
+    // function handleEventFilter(events, filter) {
+    //     setFilter(filter)
+    //     setEvents(events)
+    // }
 
     return (
         <div>
@@ -72,14 +74,14 @@ const Localist = props => {
                 readmore={props.readmore}
                 url={props.url}
             />
-            <EventFilters
+            {/* <EventFilters
                 key={currentPage}
                 events={events}
                 handleEventFilter={handleEventFilter}
                 active={filter}
                 setActive={setFilter}
                 filterby={props.filterby}
-            />
+            /> */}
             <LocalistView
                 key={filter}
                 {...props}
@@ -90,11 +92,11 @@ const Localist = props => {
                 listClassArray={listClassArray}
 
             />
-            <Paginate
+            {/* <Paginate
                 hidepagination={props.hidepagination}
                 total={llPage.total}
                 handlePageClick={handlePageClick}
-            />
+            /> */}
         </div>
     );
 

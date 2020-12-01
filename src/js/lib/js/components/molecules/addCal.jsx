@@ -5,6 +5,7 @@ import { getCalStartDate, getCalEndDate } from '../../helpers/displayEvent';
 import { isHidden } from '../../helpers/common';
 
 const buildGoogleLink = (myObj) => {
+    let description = myObj.description.replace(/<\/?[^>]+(>|$)/g, "");
     const gDateStart = getCalStartDate(myObj);
     const gDateStop = getCalEndDate(myObj);
     const href = buildUrl(
@@ -12,7 +13,7 @@ const buildGoogleLink = (myObj) => {
         queryParams: {
             action: 'TEMPLATE',
             dates: `${gDateStart}/${gDateStop}`,
-            details: myObj.description_text.replace(/[\r\n]/g, `<br />`),
+            details: description.replace(/[\r\n]/g, `<br />`),
             location: myObj.location,
             sprop: 'website:events.cornell.edu',
             text: myObj.title,
@@ -67,20 +68,21 @@ const buildOutlookCal = myObj => {
 }
 
 /**
- * @param {obj} props.event The localist event object
- * @return {jsx} The rendered template.
+ * @param {object} props The localist event object
+ * @return {JSX.Element} The rendered template.
  */
 const AddCal = props => {
     const { event, hideaddcal } = props;
 
     if (isHidden(hideaddcal)) {
-        return '';
+        return <></>;
     }
 
     return (
         <span className="event-subscribe"
-        >add to calendar {buildGoogleStr(event)} {buildiCal(event)}
-            {buildOutlookCal(event)}
+        >add to calendar {buildGoogleStr(event)}
+            {/* {buildiCal(event)}
+            {buildOutlookCal(event)} */}
         </span>
     )
 };
@@ -91,4 +93,4 @@ AddCal.propTypes = {
 }
 
 export default AddCal;
-export {buildGoogleStr, buildiCal, buildOutlookCal, buildGoogleLink}
+export { buildGoogleStr, buildiCal, buildOutlookCal, buildGoogleLink }

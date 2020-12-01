@@ -7,105 +7,105 @@ import Truncate from "../../../atoms/Truncate";
 import Time from "../../../atoms/Time";
 
 const AgendaListView = props => {
-	const {
-		calendarEvent,
-		hideimages,
-		hidetime,
-		setShowDialog,
-		setEventSelected
-	} = props;
-	const { events } = useContext(EventsContext);
-	const event = events.find(e => e.event.eventId === calendarEvent.eventId)
-		.event;
+  const {
+    calendarEvent,
+    hideimages,
+    hidetime,
+    setShowDialog,
+    setEventSelected
+  } = props;
+  const { events } = useContext(EventsContext);
+  const event = events.find(e => e.event.eventId === calendarEvent.eventId)
+    .event;
 
-	if (!event || !events) {
-		return "";
-	}
+  if (!event || !events) {
+    return "";
+  }
 
-	/**
-	 *
-	 * @param {obj} eventTypes
-	 * @return {string} Html string
-	 */
-	// const tagStr = eventTypes => {
-	// 	let spanStr;
-	// 	if (eventTypes) {
-	// 		spanStr = eventTypes.map(element => {
-	// 			return (
-	// 				<span key={element.id} className="inline-events-type">
-	// 					{element.name}
-	// 				</span>
-	// 			);
-	// 		});
-	// 	}
-	// 	return spanStr;
-	// };
-	const tagStr = "";
+  /**
+   *
+   * @param {obj} eventTypes
+   * @return {string} Html string
+   */
+  // const tagStr = eventTypes => {
+  // 	let spanStr;
+  // 	if (eventTypes) {
+  // 		spanStr = eventTypes.map(element => {
+  // 			return (
+  // 				<span key={element.id} className="inline-events-type">
+  // 					{element.name}
+  // 				</span>
+  // 			);
+  // 		});
+  // 	}
+  // 	return spanStr;
+  // };
+  const tagStr = "";
 
-	const handleOnClick = () => {
-		setEventSelected(event);
-		setShowDialog(true);
-	};
+  const handleOnClick = () => {
+    setEventSelected(event);
+    setShowDialog(true);
+  };
 
-	const eventTime = getEventTime(event);
-	const classList = getClassItem(event);
-	return (
-		<div className={classList}>
-			<div className="events">
-				<a
-					href={`#${event.eventId}`}
-					className="group-link-wrapper field-group-link"
-					onClick={handleOnClick}
-				>
-					{hidetime ? "" : <Time event={event} />}
-					<div className="field title">
-						<h3>{event.title}</h3>
-					</div>
-					<div className="field meta">
-						<p>
-							{hidetime ? "" : eventTime}
-							{event.locationName ? `, ${event.locationName}` : ""}
-							{/* {tagStr(event.filters.event_types)} */}
-						</p>
-					</div>
-					<div className="field field-name-summary summary">
-						<p>
-							<EventImg
-								photoUrl={event.photoUrl}
-								title={event.title}
-								hideimages={hideimages}
-								photoCrop="big"
-							/>
-							<Truncate
-								event={event}
-								hidedescription="false"
-								truncatedescription="300"
-								readMore="read more"
-							/>
-						</p>
-					</div>
-				</a>
-			</div>
-		</div>
-	);
+  const eventTime = getEventTime(event);
+  const classList = getClassItem(event);
+  return (
+    <div className={classList}>
+      <div className="events">
+        <a
+          href={`#${event.eventId}`}
+          className="group-link-wrapper field-group-link"
+          onClick={handleOnClick}
+        >
+          {hidetime ? "" : <Time event={event} />}
+          <div className="field title">
+            <h3>{event.title}</h3>
+          </div>
+          <div className="field meta">
+            <p>
+              {hidetime ? "" : eventTime}
+              {event.locationName ? `, ${event.locationName}` : ""}
+              {/* {tagStr(event.filters.event_types)} */}
+            </p>
+          </div>
+          <div className="field field-name-summary summary">
+            <p>
+              <EventImg
+                photoUrl={event.photoUrl}
+                title={event.title}
+                hideimages={hideimages}
+                photoCrop="big"
+              />
+              <Truncate
+                event={event}
+                hidedescription="false"
+                truncatedescription="300"
+                readMore="read more"
+              />
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  );
 };
 
 AgendaListView.propTypes = {
-	calendarEvent: PropTypes.object.isRequired,
-	hideaddcal: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-		.isRequired,
-	truncatedescription: PropTypes.string.isRequired,
-	hidedescription: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-		.isRequired,
-	hideimages: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-		.isRequired,
-	hidetime: PropTypes.bool,
-	setShowDialog: PropTypes.func.isRequired,
-	setEventSelected: PropTypes.func.isRequired
+  calendarEvent: PropTypes.object.isRequired,
+  hideaddcal: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  truncatedescription: PropTypes.string.isRequired,
+  hidedescription: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  hideimages: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  hidetime: PropTypes.bool,
+  setShowDialog: PropTypes.func.isRequired,
+  setEventSelected: PropTypes.func.isRequired
 };
 
 AgendaListView.defaultProps = {
-	hidetime: false
+  hidetime: false
 };
 
 export default AgendaListView;

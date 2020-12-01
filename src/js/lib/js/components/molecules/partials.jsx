@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { isHidden } from '../../helpers/common';
 
 const EventTitle = props => {
-    const {title, url} = props;
+    const { title, url } = props;
     return (
         <h3>
             <a
@@ -23,8 +23,8 @@ EventTitle.propTypes = {
 };
 
 const EventDate = props => {
-    const {date} = props;
-    return(
+    const { date } = props;
+    return (
         <h4 className='meta date'>
             <span className='fulldate'>
                 {date}
@@ -38,8 +38,8 @@ EventDate.propTypes = {
 };
 
 const EventLocation = props => {
-    const {locationName} = props;
-    if (locationName){
+    const { locationName } = props;
+    if (locationName) {
         return <h4 className='meta location'>{locationName}</h4>
     }
     return '';
@@ -52,9 +52,9 @@ EventLocation.defaultProps = {
 }
 
 const EventImg = props => {
-    const {hideimages, photoUrl, title, photoCrop} = props;
-    if ( isHidden(hideimages) || !photoUrl) {
-        return '';
+    const { hideimages, photoUrl, title, photoCrop } = props;
+    if (isHidden(hideimages) || !photoUrl) {
+        return <></>;
     }
     const photo = photoUrl.replace('/huge/', `/${photoCrop}/`);
     return (
@@ -71,8 +71,8 @@ const EventImg = props => {
 EventImg.propTypes = {
     photoUrl: PropTypes.string,
     title: PropTypes.string.isRequired,
-    hideimages: PropTypes.oneOfType([PropTypes.string,PropTypes.number]),
-    photoCrop:PropTypes.oneOf(['huge', 'big', 'big_square']),
+    hideimages: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    photoCrop: PropTypes.oneOf(['huge', 'big', 'big_square']),
 };
 EventImg.defaultProps = {
     hideimages: null,
@@ -80,8 +80,8 @@ EventImg.defaultProps = {
 }
 
 const EventThumbnail = props => {
-    const {hideimages, photoUrl, title, photoCrop} = props;
-    if ( isHidden(hideimages)) {
+    const { hideimages, photoUrl, title, photoCrop } = props;
+    if (isHidden(hideimages)) {
         return '';
     }
     return (
@@ -100,16 +100,16 @@ const EventThumbnail = props => {
 EventThumbnail.propTypes = {
     photoUrl: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    hideimages: PropTypes.oneOfType([PropTypes.string,PropTypes.number]),
-    photoCrop:PropTypes.oneOf(['huge', 'big', 'big_square']),
+    hideimages: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    photoCrop: PropTypes.oneOf(['huge', 'big', 'big_square']),
 };
 EventThumbnail.defaultProps = {
     hideimages: null,
     photoCrop: 'big',
 }
 
-const EventDescription = props =>{
-    const {description, title, url, hidedescription} = props;
+const EventDescription = props => {
+    const { description, title, url, hidedescription } = props;
 
     const descriptionLink = <a
         className='read-more more'
@@ -122,7 +122,7 @@ const EventDescription = props =>{
     </a>
 
     return (
-        <div className = 'summary'>
+        <div className='summary'>
             <p className='description'>
                 {
                     isHidden(hidedescription)
@@ -143,7 +143,7 @@ EventDescription.propTypes = {
     description: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-    hidedescription: PropTypes.oneOfType([PropTypes.string,PropTypes.number]),
+    hidedescription: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 EventDescription.defaultProps = {
@@ -151,13 +151,13 @@ EventDescription.defaultProps = {
 }
 
 const EventTypes = props => {
-    const {eventTypes} = props;
+    const { eventTypes } = props;
     if (!eventTypes) {
         return '';
     }
     return (
         <h4 className="meta type">
-            <span className="fa"/>
+            <span className="fa" />
             {eventTypes.map(eventType => {
                 return eventType.name
             }).join(', ')}
@@ -172,8 +172,8 @@ EventTypes.defaultProps = {
     eventTypes: null,
 }
 
-const FilterButton= props => {
-    const {filterId, active, clickHandler, name} = props
+const FilterButton = props => {
+    const { filterId, active, clickHandler, name } = props
     return (
         <button
             id={filterId}

@@ -2,13 +2,15 @@ import React from "react";
 
 const EventsContext = React.createContext({
   events: [],
-  setEvents: () => {},
+  setEvents: props => {},
   filteredEvents: [],
-  setFilteredEvents: () => {},
+  setFilteredEvents: props => {},
   showDialog: false,
-  setShowDialog: () => {},
+  setShowDialog: props => {},
   eventSelected: {},
-  setEventSelected: () => {},
+  setEventSelected: props => {},
+  displayedDateRange: {},
+  setDisplayedDateRange: props => {}
 });
 
 export default EventsContext;

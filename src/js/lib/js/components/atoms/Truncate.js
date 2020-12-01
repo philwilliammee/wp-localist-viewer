@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import { getTruncDesc } from "../../helpers/displayEvent";
 import { isHidden } from "../../helpers/common";
 
-const Truncate = (props) => {
+const Truncate = props => {
   const { hidedescription, event, truncatedescription, readMore } = props;
   if (isHidden(hidedescription)) {
-    return "";
+    return <></>;
   }
   return (
     <>
@@ -20,11 +20,11 @@ Truncate.propTypes = {
   truncatedescription: PropTypes.string.isRequired,
   hidedescription: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
-  readMore: PropTypes.string,
+  readMore: PropTypes.string
 };
 
 Truncate.defaultProps = {
-  readMore: "",
+  readMore: ""
 };
 
 export default Truncate;
