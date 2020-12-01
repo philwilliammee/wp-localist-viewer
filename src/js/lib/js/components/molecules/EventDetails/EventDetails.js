@@ -47,7 +47,7 @@ const EventDetails = props => {
 						{getEventDate(event)} @ {getEventFullTime(event)}
 					</span>
 					<span className="inline-events-type">
-						{event.location_name ? event.location_name : event.experience}
+						{event.location_name ? event.location_name : ""}
 					</span>
 					<div className="field field-name-summary summary">
 						<div>
@@ -62,7 +62,7 @@ const EventDetails = props => {
 							<span dangerouslySetInnerHTML={{ __html: event.description }} />
 						</div>
 					</div>
-					<div className="cwd-more-info">
+					{/* <div className="cwd-more-info">
 						<Grid container>
 							<Grid col={12}>
 								<h4>Details</h4>
@@ -77,15 +77,15 @@ const EventDetails = props => {
 									""
 								)}
 								<h5>Departments</h5>
-								{/* <p>{getEventDepartmentsString(event)}</p> */}
-								{/* {event.tags.length > 0 ? (
+								<p>{getEventDepartmentsString(event)}</p>
+								{event.tags.length > 0 ? (
 									<>
 										<h5>Tags</h5>
 										<p>{event.tags.join(", ")}</p>
 									</>
 								) : (
 									""
-								)} */}
+								)}
 
 								<h5>Website</h5>
 								<p>
@@ -94,13 +94,13 @@ const EventDetails = props => {
 									</a>
 								</p>
 							</Grid>
-							{/* <Grid col={4}>
+							<Grid col={4}>
                 <h4>Group</h4>
                 <p>{event.group_name}</p>
                 <h5>Website</h5>
                 <p>The website url</p>
-              </Grid> */}
-							{/* <Grid col={6}>
+              </Grid>
+							<Grid col={6}>
 								<h5>Group</h5>
 								<p>{event.group_name}</p>
 								{event.hashtag ? (
@@ -130,25 +130,25 @@ const EventDetails = props => {
 								) : (
 									""
 								)}
-							</Grid> */}
+							</Grid>
 						</Grid>
 					</div>
 
-					{/* <div className="cwd-more-info secondary">
+					<div className="cwd-more-info secondary">
             <Grid container>
               <Grid col={4}>
                 <h4>Venue</h4>
                 <h5>The venue</h5>
               </Grid>
             </Grid>
-          </div> */}
+          </div>
 					<p>
-						{/* <a href="/#" className="link-button">
+						<a href="/#" className="link-button">
               Register link
-            </a> */}
+            </a> 
 
-						{/* <AddCal event={event} hideaddcal="false" /> */}
-					</p>
+						<AddCal event={event} hideaddcal="false" />
+					</p>*/}
 				</div>
 			</div>
 		</section>

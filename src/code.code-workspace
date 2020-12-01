@@ -1,0 +1,35 @@
+{
+  "folders": [{
+    "path": "."
+  }],
+  "settings": {
+    "editor.fontSize": 15,
+    "breadcrumbs.enabled": true,
+    "css.validate": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "brackets",
+    "editor.insertSpaces": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "off",
+    // "editor.detectIndentation": true,
+    "editor.rulers": [
+      80
+    ],
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "html.format.enable": true,
+    "html.format.wrapLineLength": 80,
+    "telemetry.enableTelemetry": false,
+    "eslint.nodePath": "./node_modules/eslint/lib/api.js",
+    "eslint.options": {
+      "ignorePath": ".eslintignore"
+    },
+    // "terminal.integrated.fontFamily": "dejavu sans mono for powerline",
+    "javascript.implicitProjectConfig.checkJs": true,
+    "cSpell.words": [],
+  }
+}

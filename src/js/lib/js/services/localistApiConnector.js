@@ -3,15 +3,26 @@ import moment from "moment";
 import { gql } from "@apollo/client";
 
 const GET_EVENTS = `
-	query getEvents {
+	query getEvents(
+		$startDay: Int!
+		$startMonth: Int!
+		$startYear: Int!
+		$endDay: Int!
+		$endMonth: Int!
+		$endYear: Int!
+	) {
 		events(
-			first: 100
-			where: { dateQuery: { after: { day: 1, month: 11, year: 2020 } } }
+			where: {
+				dateQuery: {
+					after: { day: $startDay, month: $startMonth, year: $startYear }
+					before: { day: $endDay, month: $endMonth, year: $endYear }
+				}
+			}
 		) {
 			nodes {
 				date
 				event {
-          eventId
+					eventId
 					title
 					description
 					date
@@ -81,9 +92,21 @@ export default props => {
 		params.days = daysahead;
 	}
 
+	console.log(params.start);
+	console.log(params.end);
 	const body = {
-		query: GET_EVENTS
+		query: GET_EVENTS,
+		variables: {
+			startDay: parseInt(moment(params.start).format("D"), 10),
+			startMonth: parseInt(moment(params.start).format("M"), 10),
+			startYear: parseInt(moment(params.start).format("YYYY"), 10),
+			endDay: parseInt(moment(params.end).format("D"), 10),
+			endMonth: parseInt(moment(params.end).format("M"), 10),
+			endYear: parseInt(moment(params.end).format("YYYY"), 10)
+		}
 	};
+
+	console.log(body.variables);
 
 	const options = {
 		headers: {

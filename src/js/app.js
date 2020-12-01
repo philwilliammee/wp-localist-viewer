@@ -18,9 +18,9 @@ require("babel-polyfill");
 const eventListings = [...document.getElementsByClassName("events-listing")];
 
 eventListings.forEach(elem => {
-	const dataset = { ...elem.dataset };
-	ReactDOM.render(
-		<LocalistComponent {...dataset} />,
-		document.getElementById(dataset.target)
-	);
+  const dataset = { ...elem.dataset };
+  ReactDOM.render(
+    <LocalistComponent {...dataset} />,
+    document.getElementById(dataset.target)
+  );
 });

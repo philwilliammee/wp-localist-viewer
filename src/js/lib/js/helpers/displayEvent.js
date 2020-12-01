@@ -28,7 +28,7 @@ export const getEventStart = event => {
  * @return {string} The 12 hour string: "1:00 p.m".
  */
 const getTimefromDateTime = dateTime => {
-	const time = moment(dateTime).format("h:mm a");
+	const time = moment(dateTime, "MMMM D, YYYY").format("h:mm a");
 	return time;
 };
 
@@ -52,7 +52,8 @@ const getMonthDayfromDateTime = dateTime => {
  * @return {string} The abbreviated day "1".
  */
 const getDayfromDateTime = dateTime => {
-	const day = moment(dateTime).format("D");
+	const day = moment(dateTime, "MMMM D, YYYY").format("D");
+	// const day = moment(dateTime).format("D");
 	return day;
 };
 
@@ -122,9 +123,10 @@ export const getDisplayDate = (event, format) => {
  * @return {string} The event start date.
  */
 export const getEventDate = event => {
-	const startDateTime = getEventStart(event);
-	const eventSrtartDate = getMonthDayfromDateTime(startDateTime);
-	return eventSrtartDate;
+	// const startDateTime = getEventStart(event);
+	// const eventSrtartDate = getMonthDayfromDateTime(startDateTime);
+	// return eventSrtartDate;
+	return event.date;
 };
 
 /**
@@ -181,7 +183,6 @@ export const isAllDay = event => {
  * @return {string} the eventTime string.
  */
 export const getEventTime = event => {
-	console.log();
 	let eventTime = "";
 	if (isAllDay(event)) {
 		eventTime = "all day";
@@ -377,8 +378,9 @@ export const getMonthHeader = event => {
  * @return {string} The MMM".
  */
 export const getAbbrMonth = event => {
-	const startDateTime = getEventStart(event);
-	const abbrMonth = moment(startDateTime).format("MMM");
+	// const startDateTime = getEventStart(event);
+	//December 4, 2020
+	const abbrMonth = moment(event.date, "MMMM D, YYYY").format("MMM");
 	return abbrMonth;
 };
 
