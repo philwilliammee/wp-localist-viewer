@@ -53,10 +53,10 @@ EventLocation.defaultProps = {
 
 const EventImg = props => {
     const {hideimages, photoUrl, title, photoCrop} = props;
-    const photo = photoUrl.replace('/huge/', `/${photoCrop}/`);
-    if ( isHidden(hideimages)) {
+    if ( isHidden(hideimages) || !photoUrl) {
         return '';
     }
+    const photo = photoUrl.replace('/huge/', `/${photoCrop}/`);
     return (
         <img
             alt={title}
@@ -69,7 +69,7 @@ const EventImg = props => {
 }
 
 EventImg.propTypes = {
-    photoUrl: PropTypes.string.isRequired,
+    photoUrl: PropTypes.string,
     title: PropTypes.string.isRequired,
     hideimages: PropTypes.oneOfType([PropTypes.string,PropTypes.number]),
     photoCrop:PropTypes.oneOf(['huge', 'big', 'big_square']),

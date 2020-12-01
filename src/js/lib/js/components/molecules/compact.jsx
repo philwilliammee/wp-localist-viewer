@@ -18,7 +18,7 @@ const CompactInner = props => {
     return (
         <div className={`views-row ${classList}`}>
             <EventThumbnail
-                photoUrl={event.photo_url}
+                photoUrl={event.photoUrl}
                 title={event.title}
                 hideimages={hideimages}
                 photoCrop='big'

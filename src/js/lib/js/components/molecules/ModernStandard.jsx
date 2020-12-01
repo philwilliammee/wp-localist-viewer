@@ -50,7 +50,7 @@ export const ModernStandardInner = props => {
                     <div className="field field-name-summary summary">
                         <p>
                             <EventImg
-                                photoUrl={event.photo_url}
+                                photoUrl={event.photoUrl}
                                 title={event.title}
                                 hideimages = {hideimages}
                                 photoCrop='big'

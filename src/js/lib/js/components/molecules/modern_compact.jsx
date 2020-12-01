@@ -18,7 +18,7 @@ const ModernCompactInner = props => {
                     className="group-link-wrapper field-group-link"
                 >
                     <EventThumbnail
-                        photoUrl={event.photo_url}
+                        photoUrl={event.photoUrl}
                         title={event.title}
                         hideimages={hideimages}
                         photoCrop='big'

@@ -37,15 +37,18 @@ const Localist = props => {
             end   = moment().add(1, 'month').endOf('month').format('YYYY-MM-DD hh:mm');
         }
         setLoading(true)
-        const itemClassArray = props.itemclass.split(' ').concat(['event-node']);
+        // const itemClassArray = props.itemclass.split(' ').concat(['event-node']);
         let res = await localistApiConnector({ ...props, page:currentPage, start, end});
-        res.data.events.forEach(event => {
-            event.event.itemClassArray = [...itemClassArray];
-        })
+        
+        const data = res.data.data.events.nodes
+        console.log(data)
+        // data.events.forEach(event => {
+        //     event.event.itemClassArray = [...itemClassArray];
+        // })
         // Used by calendar only.
-        setFilteredEvents(res.data.events)
-        setEvents(res.data.events)
-        setLlPage(res.data.page)
+        setFilteredEvents(data)
+        setEvents(data)
+        // setLlPage(res.data.page)
         setLoading(false)
     }, [currentPage, props])
 

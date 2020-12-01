@@ -40,7 +40,7 @@ const StandardInner = props => {
                             eventTypes={getEventType(event, filterby)} /> */}
                     </div>
                     <EventThumbnail
-                        photoUrl={event.photo_url}
+                        photoUrl={event.photoUrl}
                         title={event.title}
                         hideimages={hideimages}
                         photoCrop='big'
